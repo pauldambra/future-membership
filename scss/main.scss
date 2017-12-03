@@ -1,6 +1,19 @@
 // coop toolkit ^2.0.2
 @import "coop-toolkit";
 
+// toggle grid borders
+$show-guides:false;
+
+@mixin show-guides{
+  @if $show-guides{
+  	border: 1px dashed pink;
+  }
+}
+
+.column{
+  @include show-guides;
+}
+
 // future membership components
 @import "example/example";
 @import "text/text";
