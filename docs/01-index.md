@@ -2,4 +2,4 @@
 title: Future Membership
 ---
 
-This is your index page. You can edit its contents at `docs/01-index.hbs`
+To add a new component create a folder within /components and

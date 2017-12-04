@@ -65,8 +65,7 @@ gulp.task('sass', function () {
 
             includePaths: [
               'node_modules/coop-frontend-toolkit/styles/',
-              'components/',
-              'scss'
+              'scss/'
             ]
 //            outputStyle: 'compressed'
         }))
@@ -95,7 +94,7 @@ gulp.task('js', function() {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch(['components/**/*.scss','scss/*.scss'], ['sass']);
+    gulp.watch(['scss/**/*.scss','scss/*.scss'], ['sass']);
 //    gulp.watch('js/src/*.js', ['js']);
 //    gulp.watch(['**/*.html', 'js/*.js', 'images/*.jpg', 'images/*.png', '!{_site,_site/**}'], ['jekyll-rebuild']);
 });

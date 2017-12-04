@@ -1,0 +1,10 @@
+// toggle grid borders
+@mixin show-guides{
+  @if $show-guides{
+  	border: 1px dashed pink;
+  }
+}
+
+.column{
+  @include show-guides;
+}
