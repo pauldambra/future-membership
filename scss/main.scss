@@ -1,12 +1,15 @@
 // coop toolkit ^2.0.2
 @import "coop-toolkit";
 
-// variables
-$show-guides:false; // toggle this to show the layout grid
+// fm variables
+$show-guides:true;
 
-// utility partials
-@import "utilities/show-guides";
+// fm utility partials
+@import "utilities/helpers";
+@import "utilities/mixins";
+@import "utilities/typography";
 
-// future membership partials
-@import "example";
-//@import "etc";
+// fm component partials
+@import "button-white";
+@import "card-offset";
+@import "logo";

@@ -1,3 +1,8 @@
+@mixin reset-margins{
+  margin:0;
+  padding:0;
+}
+
 // toggle grid borders
 @mixin show-guides{
   @if $show-guides{

@@ -1,0 +1,20 @@
+.button-white{
+  @include reset-margins;
+  width:91px;
+  height:41px;
+  color:$coop-grey;
+  box-shadow:none;
+  border:1px solid $coop-grey;
+  border-radius:5px;
+
+  @include media(medium){
+    font-size:16px;
+  }
+
+  &:hover{
+    background:none;
+    box-shadow:none;
+    border:1px solid $coop-grey;
+  }
+
+}

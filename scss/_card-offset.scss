@@ -1,0 +1,42 @@
+.card-offset{
+  background:#334C89;
+  overflow:hidden;
+
+    @include media(large){
+      width:50%;
+    }
+
+  h2{
+    display:block;
+    margin:0;
+    padding:$quarter-spacing-unit;
+    color:white;
+
+    @include media(small){
+      padding:$half-spacing-unit;
+    }
+  }
+  p{
+    margin:0 0 0 $quarter-spacing-unit;
+    padding:$quarter-spacing-unit $quarter-spacing-unit 0 $quarter-spacing-unit;
+    background:$white;
+
+    @include media(small){
+      margin:0 0 0 $half-spacing-unit;
+      padding:$half-spacing-unit $half-spacing-unit 0 $half-spacing-unit;
+    }
+
+    @include media(large){
+      padding:$half-spacing-unit $half-spacing-unit 0 $base-spacing-unit;
+    }
+  }
+
+  .card-offset-text{
+    @include media(large){
+      position:absolute;
+      left:50%;
+      top:$half-spacing-unit;
+      margin-left:-$base-spacing-unit*1.5;
+    }
+  }
+}

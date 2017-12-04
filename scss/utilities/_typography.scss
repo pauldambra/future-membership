@@ -1,0 +1,12 @@
+p, .p, ul{
+  font-size:18px;
+}
+
+.list-unformatted{ // used by linkList, downloads module
+  list-style:none;
+  padding:0;
+
+  > li{
+    margin:0 0 1em;
+  }
+}
