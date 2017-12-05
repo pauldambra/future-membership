@@ -7242,6 +7242,17 @@ p, .p, ul {
     box-shadow: none;
     border: 1px solid #6e6e6e; }
 
+.card .image {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 62.5%; }
+  .card .image img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0; }
+
 .card-offset {
   background: #334C89;
   overflow: hidden; }
@@ -7284,5 +7295,6 @@ p, .p, ul {
     padding-bottom: 105.5556%; }
     .logo .image img {
       position: absolute;
-      top: 0;
-      left: 0; }
+      width: 100%;
+      left: 0;
+      top: 0; }

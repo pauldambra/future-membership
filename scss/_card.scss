@@ -1,0 +1,15 @@
+.card{
+  .image{
+    height:0;
+    overflow:hidden;
+    position:relative;
+    padding-bottom:62.5%;
+
+    img{
+      position:absolute;
+      width:100%;
+      left:0;
+      top:0;
+    }
+  }
+}
