@@ -2,7 +2,7 @@
 @import "coop-toolkit";
 
 // fm variables
-$show-guides:true;
+$show-guides:false;
 
 // fm utility partials
 @import "utilities/helpers";
@@ -11,5 +11,6 @@ $show-guides:true;
 
 // fm component partials
 @import "button-white";
+@import "card";
 @import "card-offset";
 @import "logo";
