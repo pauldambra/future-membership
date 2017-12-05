@@ -7232,6 +7232,18 @@ Variables - Co-op Front-end Toolkit
   color: #2E69BA;
   border-color: #2E69BA; }
 
+.column {
+  border: 1px dashed pink; }
+
+.row.small-reverse {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+  @media (min-width: 750px) {
+    .row.small-reverse {
+      display: table; } }
+
 p, .p, ul {
   font-size: 18px; }
 

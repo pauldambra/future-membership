@@ -13,3 +13,16 @@
 .column{
   @include show-guides;
 }
+
+@mixin small-reverse(){
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include media(medium){
+    display:table;
+  }
+}
+
+.row.small-reverse{
+  @include small-reverse;
+}
