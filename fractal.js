@@ -21,6 +21,11 @@ fractal.set('project.title', 'Future Membership Components');
 fractal.components.set('path', path.join(__dirname, 'components'));
 
 /*
+ * Default status
+ */
+fractal.components.set('default.status', 'prototype');
+
+/*
  * Tell Fractal where to look for documentation pages.
  */
 fractal.docs.set('path', path.join(__dirname, 'docs'));
