@@ -1,6 +1,6 @@
 # future-membership
 
-[Fractal] (https://fractal.build/) component library for future membership work
+[Fractal](https://fractal.build/) component library for future membership work
 
 Requirements: NodeJS 4.4.7+
 
