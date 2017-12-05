@@ -4,8 +4,10 @@
         <div class="column align-right all-6">{{>@button-white}}</div>
     </div>
 
-    <div class="row collapse">
-        <h1 class="p">Welcome to your account, Gail</h1>
+    <div class="row">
+        <div class="column">
+            <h2 class="p">Welcome to your account, Gail</h2>
+        </div>
     </div>
 
     <div class="row">
@@ -26,19 +28,23 @@
                         </ul>
                     </div>
                 </div>
-        </div>
-        <div class="column medium-6 large-4">
-            <!--
-            <div class="padding-h">
-                <ul class="list-unformatted">
-                    <li><a href="">Add a missed receipt</a></li>
-                    <li><a href="">Get a replacement card</a></li>
-                    <li><a href="">Change your details</a></li>
-                    <li><a href="">Your eligibility to vote</a></li>
-                    <li><a href="">Your dividend points</a></li>
-                </ul>
             </div>
-            -->
+        </div>
+        <div class="column medium-6 large-4"></div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2 class="p">Your community news and cause</h2>
+        </div>
+    </div>
+
+    <div class="row collapse">
+        <div class="column medium-6">
+            {{>@card-with-image}}
+        </div>
+        <div class="column medium-6">
+            {{>@card-green}}
         </div>
     </div>
 </div>

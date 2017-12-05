@@ -7216,6 +7216,22 @@ Variables - Co-op Front-end Toolkit
 .block {
   display: block; }
 
+.green {
+  color: #4D8300;
+  border-color: #4D8300; }
+
+.dark-green {
+  color: #375D00;
+  border-color: #375D00; }
+
+.red {
+  color: #A12900;
+  border-color: #A12900; }
+
+.blue {
+  color: #2E69BA;
+  border-color: #2E69BA; }
+
 p, .p, ul {
   font-size: 18px; }
 
@@ -7242,6 +7258,16 @@ p, .p, ul {
     box-shadow: none;
     border: 1px solid #6e6e6e; }
 
+.card h3 {
+  font-size: 36px; }
+  @media (min-width: 750px) {
+    .card h3 {
+      padding: 16px; } }
+
+@media (min-width: 750px) {
+  .card p {
+    padding: 0 16px; } }
+
 .card .image {
   height: 0;
   overflow: hidden;
@@ -7252,6 +7278,14 @@ p, .p, ul {
     width: 100%;
     left: 0;
     top: 0; }
+
+.card .image + h3 {
+  background: #ffffff;
+  position: relative;
+  margin: -64px 32px 0 0; }
+  @media (min-width: 750px) {
+    .card .image + h3 {
+      margin: -64px 32px 0 0; } }
 
 .card-offset {
   background: #334C89;

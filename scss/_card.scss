@@ -1,4 +1,18 @@
 .card{
+  h3{
+    font-size:36px;
+
+    @include media(medium){
+      padding:$quarter-spacing-unit;
+    }
+  }
+
+  p{
+    @include media(medium){
+      padding:0 $quarter-spacing-unit;
+    }
+  }
+
   .image{
     height:0;
     overflow:hidden;
@@ -10,6 +24,16 @@
       width:100%;
       left:0;
       top:0;
+    }
+  }
+
+  .image + h3{
+    background:$white;
+    position:relative;
+    margin:-$base-spacing-unit $half-spacing-unit 0 0;
+
+    @include media(medium){
+      margin:-$base-spacing-unit $half-spacing-unit 0 0;
     }
   }
 }
