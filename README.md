@@ -18,20 +18,14 @@ Install node dependencies
 $ npm install
 ```
 
-## Start server & asset pipeline
+## Start local server & Sass
 
-To run in dynamic mode locally
+Start Fractal & compile Sass locally.
+
+This triggers watching and syncing, which means your local dev site will auto-update with changes.
 
 ```sh
 $ ./start.sh
 ```
 
 Navigate to http://localhost:3000/
-
-## Build
-
-To build a static version
-
-```sh
-$ fractal build
-```
