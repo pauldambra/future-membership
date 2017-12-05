@@ -1,6 +1,9 @@
 {
   "name": "future-membership",
   "version": "0.1.0",
+  "scripts": {
+    "fractal-build": "fractal build"
+  },
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "coop-frontend-toolkit": "^2.0.2",
