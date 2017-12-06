@@ -2,9 +2,10 @@
 @import "coop-toolkit";
 
 // fm variables
-$show-guides:true;
+$show-guides:false;
 
 // fm utility partials
+@import "utilities/colours";
 @import "utilities/helpers";
 @import "utilities/mixins";
 @import "utilities/typography";
