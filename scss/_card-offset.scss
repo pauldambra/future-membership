@@ -1,19 +1,30 @@
 .card-offset{
-  background:$dark-blue;
   overflow:hidden;
+
+  .card-offset-background{
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
 
     @include media(large){
       width:50%;
     }
+  }
 
   h2{
     display:block;
     margin:0;
     padding:$quarter-spacing-unit;
-    color:white;
+    color:$white;
 
     @include media(small){
       padding:$half-spacing-unit;
+    }
+
+    @include media(large){
+      width:50%;
+      float:left;
     }
   }
   p{
@@ -23,20 +34,20 @@
 
     @include media(small){
       margin:0 0 0 $half-spacing-unit;
-      padding:$half-spacing-unit $half-spacing-unit 0 $half-spacing-unit;
     }
 
     @include media(large){
-      padding:$half-spacing-unit $half-spacing-unit 0 $base-spacing-unit;
+      margin:0;
+      padding-left:$base-spacing-unit;
     }
   }
 
   .card-offset-text{
     @include media(large){
-      position:absolute;
-      left:50%;
-      top:$half-spacing-unit;
-      margin-left:-$base-spacing-unit*1.5;
+      width:50%;
+      float:left;
+      margin-top:$half-spacing-unit;
+      margin-left:-$base-spacing-unit;
     }
   }
 }

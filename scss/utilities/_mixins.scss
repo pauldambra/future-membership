@@ -19,7 +19,7 @@
   flex-direction: column-reverse;
 
   @include media(medium){
-    display:table;
+    display:block;
   }
 }
 

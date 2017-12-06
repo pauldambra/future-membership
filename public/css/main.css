@@ -7232,6 +7232,9 @@ Variables - Co-op Front-end Toolkit
   color: #2E69BA;
   border-color: #2E69BA; }
 
+.bg-dark-blue {
+  background-color: #334C89; }
+
 .row.small-reverse {
   display: -ms-flexbox;
   display: flex;
@@ -7239,7 +7242,7 @@ Variables - Co-op Front-end Toolkit
       flex-direction: column-reverse; }
   @media (min-width: 750px) {
     .row.small-reverse {
-      display: table; } }
+      display: block; } }
 
 p, .p, ul {
   font-size: 18px; }
@@ -7297,36 +7300,44 @@ p, .p, ul {
       margin: -64px 32px 0 0; } }
 
 .card-offset {
-  background: #334C89;
   overflow: hidden; }
-  @media (min-width: 960px) {
-    .card-offset {
-      width: 50%; } }
+  .card-offset .card-offset-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1; }
+    @media (min-width: 960px) {
+      .card-offset .card-offset-background {
+        width: 50%; } }
   .card-offset h2 {
     display: block;
     margin: 0;
     padding: 16px;
-    color: white; }
+    color: #ffffff; }
     @media (min-width: 480px) {
       .card-offset h2 {
         padding: 32px; } }
+    @media (min-width: 960px) {
+      .card-offset h2 {
+        width: 50%;
+        float: left; } }
   .card-offset p {
     margin: 0 0 0 16px;
     padding: 16px 16px 0 16px;
     background: #ffffff; }
     @media (min-width: 480px) {
       .card-offset p {
-        margin: 0 0 0 32px;
-        padding: 32px 32px 0 32px; } }
+        margin: 0 0 0 32px; } }
     @media (min-width: 960px) {
       .card-offset p {
-        padding: 32px 32px 0 64px; } }
+        margin: 0;
+        padding-left: 64px; } }
   @media (min-width: 960px) {
     .card-offset .card-offset-text {
-      position: absolute;
-      left: 50%;
-      top: 32px;
-      margin-left: -96px; } }
+      width: 50%;
+      float: left;
+      margin-top: 32px;
+      margin-left: -64px; } }
 
 .logo {
   width: 38px;
