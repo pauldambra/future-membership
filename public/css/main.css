@@ -7210,50 +7210,50 @@ Variables - Co-op Front-end Toolkit
       margin-bottom: 16px;
       border-bottom-width: 1px; }
 
-.align-right {
+.fm .align-right {
   text-align: right; }
 
-.block {
+.fm .block {
   display: block; }
 
-.green {
+.fm .green {
   color: #4D8300;
   border-color: #4D8300; }
 
-.dark-green {
+.fm .dark-green {
   color: #375D00;
   border-color: #375D00; }
 
-.red {
+.fm .red {
   color: #A12900;
   border-color: #A12900; }
 
-.blue {
+.fm .blue {
   color: #2E69BA;
   border-color: #2E69BA; }
 
-.bg-dark-blue {
+.fm .bg-dark-blue {
   background-color: #334C89; }
 
-.row.small-reverse {
+.fm .row.small-reverse {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column-reverse;
       flex-direction: column-reverse; }
   @media (min-width: 750px) {
-    .row.small-reverse {
+    .fm .row.small-reverse {
       display: block; } }
 
-p, .p, ul {
+.fm p, .fm .p, .fm ul {
   font-size: 18px; }
 
-.list-unformatted {
+.fm .list-unformatted {
   list-style: none;
   padding: 0; }
-  .list-unformatted > li {
+  .fm .list-unformatted > li {
     margin: 0 0 1em; }
 
-.button-white {
+.fm .button-white {
   margin: 0;
   padding: 0;
   width: 91px;
@@ -7263,91 +7263,91 @@ p, .p, ul {
   border: 1px solid #6e6e6e;
   border-radius: 5px; }
   @media (min-width: 750px) {
-    .button-white {
+    .fm .button-white {
       font-size: 16px; } }
-  .button-white:hover {
+  .fm .button-white:hover {
     background: none;
     box-shadow: none;
     border: 1px solid #6e6e6e; }
 
-.card h3 {
+.fm .card h3 {
   font-size: 36px; }
   @media (min-width: 750px) {
-    .card h3 {
+    .fm .card h3 {
       padding: 16px; } }
 
 @media (min-width: 750px) {
-  .card p {
+  .fm .card p {
     padding: 0 16px; } }
 
-.card .image {
+.fm .card .image {
   height: 0;
   overflow: hidden;
   position: relative;
   padding-bottom: 62.5%; }
-  .card .image img {
+  .fm .card .image img {
     position: absolute;
     width: 100%;
     left: 0;
     top: 0; }
 
-.card .image + h3 {
+.fm .card .image + h3 {
   background: #ffffff;
   position: relative;
   margin: -64px 32px 0 0; }
   @media (min-width: 750px) {
-    .card .image + h3 {
+    .fm .card .image + h3 {
       margin: -64px 32px 0 0; } }
 
-.card-offset {
+.fm .card-offset {
   overflow: hidden; }
-  .card-offset .card-offset-background {
+  .fm .card-offset .card-offset-background {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1; }
     @media (min-width: 960px) {
-      .card-offset .card-offset-background {
+      .fm .card-offset .card-offset-background {
         width: 50%; } }
-  .card-offset h2 {
+  .fm .card-offset h2 {
     display: block;
     margin: 0;
     padding: 16px;
     color: #ffffff; }
     @media (min-width: 480px) {
-      .card-offset h2 {
+      .fm .card-offset h2 {
         padding: 32px; } }
     @media (min-width: 960px) {
-      .card-offset h2 {
+      .fm .card-offset h2 {
         width: 50%;
         float: left; } }
-  .card-offset p {
+  .fm .card-offset p {
     margin: 0 0 0 16px;
     padding: 16px 16px 0 16px;
     background: #ffffff; }
     @media (min-width: 480px) {
-      .card-offset p {
+      .fm .card-offset p {
         margin: 0 0 0 32px; } }
     @media (min-width: 960px) {
-      .card-offset p {
+      .fm .card-offset p {
         margin: 0;
         padding-left: 64px; } }
   @media (min-width: 960px) {
-    .card-offset .card-offset-text {
+    .fm .card-offset .card-offset-text {
       width: 50%;
       float: left;
       margin-top: 32px;
       margin-left: -64px; } }
 
-.logo {
+.fm .logo {
   width: 38px;
   height: 40px; }
-  .logo .image {
+  .fm .logo .image {
     height: 0;
     overflow: hidden;
     position: relative;
     padding-bottom: 105.5556%; }
-    .logo .image img {
+    .fm .logo .image img {
       position: absolute;
       width: 100%;
       left: 0;

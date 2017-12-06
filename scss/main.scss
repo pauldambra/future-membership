@@ -4,14 +4,19 @@
 // fm variables
 $show-guides:false;
 
-// fm utility partials
-@import "utilities/colours";
-@import "utilities/helpers";
-@import "utilities/mixins";
-@import "utilities/typography";
+// fm wrapper class
+.fm{
 
-// fm component partials
-@import "button-white";
-@import "card";
-@import "card-offset";
-@import "logo";
+  // fm utility partials
+  @import "utilities/colours";
+  @import "utilities/helpers";
+  @import "utilities/mixins";
+  @import "utilities/typography";
+
+  // fm component partials
+  @import "button-white";
+  @import "card";
+  @import "card-offset";
+  @import "logo";
+
+}
