@@ -7,7 +7,7 @@
     width:100%;
     z-index:-1;
 
-    @include media(large){
+    @include media(medium){
       width:50%;
     }
   }
@@ -22,9 +22,10 @@
       padding:$half-spacing-unit;
     }
 
-    @include media(large){
+    @include media(medium){
       width:50%;
       float:left;
+      padding-right:$base-spacing-unit;
     }
   }
   p{
@@ -36,18 +37,18 @@
       margin:0 0 0 $half-spacing-unit;
     }
 
-    @include media(large){
+    @include media(medium){
       margin:0;
       padding-left:$base-spacing-unit;
     }
   }
 
   .card-offset-text{
-    @include media(large){
+    @include media(medium){
       width:50%;
       float:left;
       margin-top:$half-spacing-unit;
-      margin-left:-$base-spacing-unit;
+      margin-left:-($half-spacing-unit+$quarter-spacing-unit);
     }
   }
 }

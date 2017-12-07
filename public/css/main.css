@@ -7235,6 +7235,9 @@ Variables - Co-op Front-end Toolkit
 .fm .bg-dark-blue {
   background-color: #334C89; }
 
+.fm .column {
+  border: 1px dashed pink; }
+
 .fm .row.small-reverse {
   display: -ms-flexbox;
   display: flex;
@@ -7270,33 +7273,55 @@ Variables - Co-op Front-end Toolkit
     box-shadow: none;
     border: 1px solid #6e6e6e; }
 
-.fm .card h3 {
-  font-size: 36px; }
+.fm .card h3, .fm .card .h3 {
+  font-size: 24px;
+  position: relative;
+  background: #ffffff; }
   @media (min-width: 750px) {
-    .fm .card h3 {
+    .fm .card h3, .fm .card .h3 {
       padding: 16px; } }
 
+.fm .card h4, .fm .card .h4 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  position: relative;
+  background: #ffffff; }
+  .wf-active .fm .card h4, .wf-active .fm .card .h4 {
+    font-family: "AvenirNextLTW01-Regular"; }
+  @media (min-width: 750px) {
+    .fm .card h4, .fm .card .h4 {
+      padding-left: 16px; } }
+
 @media (min-width: 750px) {
-  .fm .card p {
-    padding: 0 16px; } }
+  .fm .card .mega {
+    font-size: 46px; } }
+
+.fm .card p {
+  position: relative;
+  background: #ffffff;
+  margin-right: 32px; }
+  @media (min-width: 750px) {
+    .fm .card p {
+      padding: 0 16px; } }
 
 .fm .card .image {
   height: 0;
   overflow: hidden;
   position: relative;
-  padding-bottom: 62.5%; }
+  padding-bottom: 56.25%; }
+  @media (min-width: 750px) {
+    .fm .card .image {
+      padding-bottom: 44.2338%; } }
   .fm .card .image img {
     position: absolute;
     width: 100%;
     left: 0;
     top: 0; }
 
-.fm .card .image + h3 {
-  background: #ffffff;
-  position: relative;
+.fm .card .image + h3, .fm .card .image + .h4, .fm .card .image + h4, .fm .card .image + .h4 {
   margin: -64px 32px 0 0; }
   @media (min-width: 750px) {
-    .fm .card .image + h3 {
+    .fm .card .image + h3, .fm .card .image + .h4, .fm .card .image + h4, .fm .card .image + .h4 {
       margin: -64px 32px 0 0; } }
 
 .fm .card-offset {
@@ -7306,7 +7331,7 @@ Variables - Co-op Front-end Toolkit
     height: 100%;
     width: 100%;
     z-index: -1; }
-    @media (min-width: 960px) {
+    @media (min-width: 750px) {
       .fm .card-offset .card-offset-background {
         width: 50%; } }
   .fm .card-offset h2 {
@@ -7317,10 +7342,11 @@ Variables - Co-op Front-end Toolkit
     @media (min-width: 480px) {
       .fm .card-offset h2 {
         padding: 32px; } }
-    @media (min-width: 960px) {
+    @media (min-width: 750px) {
       .fm .card-offset h2 {
         width: 50%;
-        float: left; } }
+        float: left;
+        padding-right: 64px; } }
   .fm .card-offset p {
     margin: 0 0 0 16px;
     padding: 16px 16px 0 16px;
@@ -7328,16 +7354,16 @@ Variables - Co-op Front-end Toolkit
     @media (min-width: 480px) {
       .fm .card-offset p {
         margin: 0 0 0 32px; } }
-    @media (min-width: 960px) {
+    @media (min-width: 750px) {
       .fm .card-offset p {
         margin: 0;
         padding-left: 64px; } }
-  @media (min-width: 960px) {
+  @media (min-width: 750px) {
     .fm .card-offset .card-offset-text {
       width: 50%;
       float: left;
       margin-top: 32px;
-      margin-left: -64px; } }
+      margin-left: -48px; } }
 
 .fm .logo {
   width: 38px;

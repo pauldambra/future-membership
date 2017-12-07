@@ -1,3 +1,36 @@
+// set default non-webfont stack
+$default:'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// set mixins with default and .wf-active states
+@mixin regular {
+  font-family:$default;
+	.wf-active & {
+    font-family:"AvenirNextLTW01-Regular";
+	}
+}
+
+@mixin medium {
+  font-family:$default;
+	.wf-active & {
+    font-family:"AvenirNextLTW01-Medium";
+	}
+}
+
+@mixin bold {
+  font-family:$default;
+	.wf-active & {
+    font-family:"AvenirNextLTW01-Demi";
+    font-weight:normal;
+	}
+}
+
+@mixin regular-italic {
+  font-family:$default;
+	.wf-active & {
+    font-family:"AvenirNextLTW01-Italic";
+	}
+}
+
 p, .p, ul{
   font-size:18px;
 }

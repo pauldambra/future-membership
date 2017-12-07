@@ -1,13 +1,36 @@
 .card{
-  h3{
-    font-size:36px;
+  h3, .h3{
+    font-size:24px;
+    position:relative;
+    background:$white;
 
     @include media(medium){
       padding:$quarter-spacing-unit;
     }
   }
 
+  h4, .h4{
+    @include regular;
+    font-size:16px;
+    position:relative;
+    background:$white;
+
+    @include media(medium){
+      padding-left:$quarter-spacing-unit;
+    }
+  }
+
+  .mega{
+    @include media(medium){
+      font-size:46px;
+    }
+  }
+
   p{
+    position:relative;
+    background:$white;
+    margin-right:$half-spacing-unit;
+
     @include media(medium){
       padding:0 $quarter-spacing-unit;
     }
@@ -17,7 +40,11 @@
     height:0;
     overflow:hidden;
     position:relative;
-    padding-bottom:62.5%;
+    padding-bottom:56.25%; // 16:9
+
+    @include media(medium){
+      padding-bottom:44.2338%; // ratios TBC, might be variations
+    }
 
     img{
       position:absolute;
@@ -27,9 +54,7 @@
     }
   }
 
-  .image + h3{
-    background:$white;
-    position:relative;
+  .image + h3, .image + .h4, .image + h4, .image + .h4{
     margin:-$base-spacing-unit $half-spacing-unit 0 0;
 
     @include media(medium){
