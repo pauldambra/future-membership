@@ -7235,9 +7235,6 @@ Variables - Co-op Front-end Toolkit
 .fm .bg-dark-blue {
   background-color: #334C89; }
 
-.fm .column {
-  border: 1px dashed pink; }
-
 .fm .row.small-reverse {
   display: -ms-flexbox;
   display: flex;
@@ -7276,7 +7273,8 @@ Variables - Co-op Front-end Toolkit
 .fm .card h3, .fm .card .h3 {
   font-size: 24px;
   position: relative;
-  background: #ffffff; }
+  background: #ffffff;
+  margin-right: 32px; }
   @media (min-width: 750px) {
     .fm .card h3, .fm .card .h3 {
       padding: 16px; } }
@@ -7285,7 +7283,8 @@ Variables - Co-op Front-end Toolkit
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   position: relative;
-  background: #ffffff; }
+  background: #ffffff;
+  margin-right: 32px; }
   .wf-active .fm .card h4, .wf-active .fm .card .h4 {
     font-family: "AvenirNextLTW01-Regular"; }
   @media (min-width: 750px) {
@@ -7309,9 +7308,6 @@ Variables - Co-op Front-end Toolkit
   overflow: hidden;
   position: relative;
   padding-bottom: 56.25%; }
-  @media (min-width: 750px) {
-    .fm .card .image {
-      padding-bottom: 44.2338%; } }
   .fm .card .image img {
     position: absolute;
     width: 100%;
