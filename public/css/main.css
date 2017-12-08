@@ -7235,6 +7235,9 @@ Variables - Co-op Front-end Toolkit
 .fm .bg-dark-blue {
   background-color: #334C89; }
 
+.fm .bg-light-turquoise {
+  background-color: #72DCDB; }
+
 .fm .row.small-reverse {
   display: -ms-flexbox;
   display: flex;
@@ -7252,6 +7255,12 @@ Variables - Co-op Front-end Toolkit
   padding: 0; }
   .fm .list-unformatted > li {
     margin: 0 0 1em; }
+
+.fm .mega {
+  font-size: 30px; }
+  @media (min-width: 750px) {
+    .fm .mega {
+      font-size: 46px; } }
 
 .fm .button-white {
   margin: 0;
@@ -7291,9 +7300,11 @@ Variables - Co-op Front-end Toolkit
     .fm .card h4, .fm .card .h4 {
       padding-left: 16px; } }
 
-@media (min-width: 750px) {
-  .fm .card .mega {
-    font-size: 46px; } }
+.fm .card .mega {
+  font-size: 30px; }
+  @media (min-width: 750px) {
+    .fm .card .mega {
+      font-size: 46px; } }
 
 .fm .card p {
   position: relative;
@@ -7360,6 +7371,20 @@ Variables - Co-op Front-end Toolkit
       float: left;
       margin-top: 32px;
       margin-left: -48px; } }
+
+.fm .card-underline {
+  display: block;
+  color: #282828;
+  border-bottom: 1px solid #0F8482; }
+  .fm .card-underline h3, .fm .card-underline .h3 {
+    padding: 0; }
+  .fm .card-underline p, .fm .card-underline .p {
+    padding: 0; }
+
+.fm .header-block {
+  margin: 64px 0 0;
+  background: #ffffff;
+  padding: 32px 16px; }
 
 .fm .logo {
   width: 38px;

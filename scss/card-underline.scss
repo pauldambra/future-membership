@@ -1,0 +1,13 @@
+.card-underline{
+  display:block;
+  color:$body-copy;
+  border-bottom:1px solid $mid-turquoise;
+
+  h3, .h3{
+    padding:0;
+  }
+
+  p, .p{
+    padding:0;
+  }
+}

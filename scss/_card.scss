@@ -23,9 +23,7 @@
   }
 
   .mega{
-    @include media(medium){
-      font-size:46px;
-    }
+    @include mega;
   }
 
   p{

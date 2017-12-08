@@ -43,3 +43,7 @@ p, .p, ul{
     margin:0 0 1em;
   }
 }
+
+.mega{
+  @include mega;
+}

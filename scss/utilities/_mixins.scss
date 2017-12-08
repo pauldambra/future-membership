@@ -26,3 +26,11 @@
 .row.small-reverse{
   @include small-reverse;
 }
+
+@mixin mega{
+  font-size:30px;
+
+  @include media(medium){
+    font-size:46px;
+  }
+}
