@@ -7216,21 +7216,21 @@ Variables - Co-op Front-end Toolkit
 .fm .block {
   display: block; }
 
-.fm .green {
-  color: #4D8300;
-  border-color: #4D8300; }
+.fm .mid-green {
+  color: #4F820D;
+  border-color: #4F820D; }
 
 .fm .dark-green {
-  color: #375D00;
-  border-color: #375D00; }
+  color: #385C0A;
+  border-color: #385C0A; }
 
-.fm .red {
-  color: #A12900;
-  border-color: #A12900; }
+.fm .dark-red {
+  color: #9F2A00;
+  border-color: #9F2A00; }
 
-.fm .blue {
-  color: #2E69BA;
-  border-color: #2E69BA; }
+.fm .mid-blue {
+  color: #326BB7;
+  border-color: #326BB7; }
 
 .fm .bg-dark-blue {
   background-color: #334C89; }
@@ -7283,7 +7283,8 @@ Variables - Co-op Front-end Toolkit
 .fm .card {
   display: block;
   color: #282828;
-  border: none; }
+  border: none;
+  text-decoration: none; }
   .fm .card h3, .fm .card .h3 {
     font-size: 24px;
     position: relative;
@@ -7395,10 +7396,10 @@ Variables - Co-op Front-end Toolkit
     .fm .card-underline:active h3, .fm .card-underline:active .h3, .fm .card-underline:focus h3, .fm .card-underline:focus .h3, .fm .card-underline:hover h3, .fm .card-underline:hover .h3 {
       color: #0F8482; }
 
-.fm .header-block {
-  margin: 64px 0 0;
+.fm .header-block h2 {
   background: #ffffff;
-  padding: 32px 16px; }
+  margin: 64px -16px 0;
+  padding: 32px 32px 16px; }
 
 .fm .logo {
   width: 38px;
@@ -7413,3 +7414,8 @@ Variables - Co-op Front-end Toolkit
       width: 100%;
       left: 0;
       top: 0; }
+
+a {
+  border: none;
+  text-decoration: underline;
+  text-decoration-skip: ink; }

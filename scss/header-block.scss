@@ -1,5 +1,7 @@
 .header-block{
-  margin:$base-spacing-unit 0 0;
-  background:$white;
-  padding:$half-spacing-unit $quarter-spacing-unit;
+  h2{
+    background:$white;
+    margin:$base-spacing-unit (-$quarter-spacing-unit) 0;
+    padding:$half-spacing-unit $half-spacing-unit $quarter-spacing-unit;
+  }
 }

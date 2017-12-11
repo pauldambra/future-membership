@@ -4,6 +4,9 @@
 // fm variables
 $show-guides:false;
 
+// fm Grid settings
+$grid-gutter: $base-spacing-unit !default;
+
 // fm wrapper class
 .fm{
 
@@ -21,4 +24,10 @@ $show-guides:false;
   @import "header-block";
   @import "logo";
 
+}
+
+a {
+  border:none;
+  text-decoration:underline;
+  text-decoration-skip: ink;
 }
