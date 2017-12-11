@@ -7210,6 +7210,13 @@ Variables - Co-op Front-end Toolkit
       margin-bottom: 16px;
       border-bottom-width: 1px; }
 
+.fm .wrap {
+  padding: 0; }
+
+.fm .row {
+  margin-left: 0;
+  margin-right: 0; }
+
 .fm .align-right {
   text-align: right; }
 
@@ -7376,9 +7383,6 @@ Variables - Co-op Front-end Toolkit
     margin: 0;
     padding: 16px;
     color: #ffffff; }
-    @media (min-width: 480px) {
-      .fm .card-offset h2, .fm .card-offset .h2 {
-        padding: 32px; } }
     @media (min-width: 750px) {
       .fm .card-offset h2, .fm .card-offset .h2 {
         width: 50%;

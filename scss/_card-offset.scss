@@ -24,7 +24,7 @@
     color:$white;
 
     @include media(small){
-      padding:$half-spacing-unit;
+//      padding:$half-spacing-unit;
     }
 
     @include media(medium){

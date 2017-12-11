@@ -55,6 +55,7 @@
     }
   }
 
+  // overlay text block onto image
   .image + h3, .image + .h4, .image + h4, .image + .h4{
     margin:-$base-spacing-unit $half-spacing-unit 0 0;
 
@@ -64,8 +65,6 @@
   }
 
   &:active, &:focus, &:hover{
-    h3, .h3, h4, .h4{
-//      color:$mid-turquoise;
-    }
+    // TBC
   }
 }
