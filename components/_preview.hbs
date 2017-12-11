@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <script>document.write('<link rel="stylesheet" type="text/css" href="/css/main.css?v='+Date.now()+'" />');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body class="fm">
-
-    {{ project.title }}
-
     {{{ yield }}}
 </body>
 </html>
