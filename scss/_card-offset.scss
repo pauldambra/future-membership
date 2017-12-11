@@ -9,10 +9,15 @@
 
     @include media(medium){
       width:50%;
+      height:78%;
+    }
+
+    @include media(large){
+      height:100%;
     }
   }
 
-  h2{
+  h2, .h2{
     display:block;
     margin:0;
     padding:$quarter-spacing-unit;
@@ -28,6 +33,21 @@
       padding-right:$base-spacing-unit;
     }
   }
+
+  .card-offset-text{
+    @include media(medium){
+      width:50%;
+      float:left;
+      margin-top:$quarter-spacing-unit*1.5;
+      margin-left:-($quarter-spacing-unit);
+    }
+
+    @include media(large){
+      margin-top:$half-spacing-unit;
+      margin-left:-($half-spacing-unit+$quarter-spacing-unit);
+    }
+  }
+
   p{
     margin:0 0 0 $quarter-spacing-unit;
     padding:$quarter-spacing-unit $quarter-spacing-unit 0 $quarter-spacing-unit;
@@ -39,16 +59,12 @@
 
     @include media(medium){
       margin:0;
-      padding-left:$base-spacing-unit;
+      padding-left:$half-spacing-unit;
     }
-  }
 
-  .card-offset-text{
-    @include media(medium){
-      width:50%;
-      float:left;
-      margin-top:$half-spacing-unit;
-      margin-left:-($half-spacing-unit+$quarter-spacing-unit);
+    @include media(large){
+      margin:0;
+      padding-left:$base-spacing-unit;
     }
   }
 }

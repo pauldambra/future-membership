@@ -16,6 +16,10 @@ $default:'Helvetica Neue', Helvetica, Arial, sans-serif;
 	}
 }
 
+.medium{
+  @include medium;
+}
+
 @mixin bold {
   font-family:$default;
 	.wf-active & {
@@ -33,6 +37,18 @@ $default:'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 p, .p, ul{
   font-size:18px;
+  line-height:32px;
+
+  @include media(large){
+    line-height:24px;
+  }
+}
+
+a {
+  border:none;
+  text-decoration:underline;
+  text-decoration-skip: ink;
+  color:$body-copy;
 }
 
 .list-unformatted{

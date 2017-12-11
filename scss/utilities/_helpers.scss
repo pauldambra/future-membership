@@ -1,3 +1,4 @@
+// text helpers
 .align-right{
   text-align:right;
 }
@@ -33,4 +34,13 @@
 
 .bg-light-turquoise{
   background-color:$light-turquoise;
+}
+
+// grid helpers
+.padded-x2{
+  padding:0 $quarter-spacing-unit;
+
+  @include media(medium){
+    padding:0 $half-spacing-unit;
+  }
 }
