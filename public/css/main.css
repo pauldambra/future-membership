@@ -7212,10 +7212,28 @@ Variables - Co-op Front-end Toolkit
 
 .fm .wrap {
   padding: 0; }
+  @media (min-width: 960px) {
+    .fm .wrap {
+      padding: 0 16px; } }
 
 .fm .row {
   margin-left: 0;
   margin-right: 0; }
+
+.fm .column.padding-q {
+  padding: 0 16px; }
+
+@media (min-width: 1300px) {
+  .fm .column.padding-xlarge-24 {
+    padding: 0 24px; } }
+
+@media (min-width: 960px) {
+  .fm .column.padding-large-0 {
+    padding: 0; } }
+
+@media (min-width: 1300px) {
+  .fm .column.padding-xlarge-8 {
+    padding: 0 8px; } }
 
 .fm .align-right {
   text-align: right; }
@@ -7245,11 +7263,8 @@ Variables - Co-op Front-end Toolkit
 .fm .bg-light-turquoise {
   background-color: #72DCDB; }
 
-.fm .padded-x2 {
-  padding: 0 16px; }
-  @media (min-width: 750px) {
-    .fm .padded-x2 {
-      padding: 0 32px; } }
+.fm .column {
+  border: 1px dashed pink; }
 
 .fm .row.small-reverse {
   display: -ms-flexbox;
@@ -7378,6 +7393,17 @@ Variables - Co-op Front-end Toolkit
     @media (min-width: 960px) {
       .fm .card-offset .card-offset-background {
         height: 100%; } }
+  @media (min-width: 750px) {
+    .fm .card-offset .card-offset-gutter {
+      background: #ffffff;
+      position: absolute;
+      height: 100%;
+      right: 0;
+      top: 32px;
+      width: 32px; } }
+  @media (min-width: 960px) {
+    .fm .card-offset .card-offset-gutter {
+      width: 64px; } }
   .fm .card-offset h2, .fm .card-offset .h2 {
     display: block;
     margin: 0;
@@ -7392,12 +7418,10 @@ Variables - Co-op Front-end Toolkit
     .fm .card-offset .card-offset-text {
       width: 50%;
       float: left;
-      margin-top: 24px;
-      margin-left: -16px; } }
+      margin-top: 24px; } }
   @media (min-width: 960px) {
     .fm .card-offset .card-offset-text {
-      margin-top: 32px;
-      margin-left: -48px; } }
+      margin-top: 32px; } }
   .fm .card-offset p {
     margin: 0 0 0 16px;
     padding: 16px 16px 0 16px;
@@ -7407,12 +7431,8 @@ Variables - Co-op Front-end Toolkit
         margin: 0 0 0 32px; } }
     @media (min-width: 750px) {
       .fm .card-offset p {
-        margin: 0;
-        padding-left: 32px; } }
-    @media (min-width: 960px) {
-      .fm .card-offset p {
-        margin: 0;
-        padding-left: 64px; } }
+        padding: 0 16px 0 0;
+        margin: 1em 0; } }
 
 .fm .card-underline {
   display: block;
@@ -7433,7 +7453,7 @@ Variables - Co-op Front-end Toolkit
     padding-bottom: 0;
     border-bottom-width: 3px; }
 
-.fm .header-block h2 {
+.fm .heading-block {
   background: #ffffff;
   margin: 64px -16px 0;
   padding: 32px 32px 16px; }

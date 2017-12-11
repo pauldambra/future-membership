@@ -2,22 +2,13 @@
 @import "coop-toolkit";
 
 // fm variables
-$show-guides:false;
+$show-guides:true;
 
 // fm wrapper class
 .fm{
-
-  .wrap{
-    padding:0;
-  }
-
-  .row{
-    margin-left:0;
-    margin-right:0;
-  }
-
   // fm utility partials
   @import "utilities/colours";
+  @import "utilities/grid";
   @import "utilities/helpers";
   @import "utilities/mixins";
   @import "utilities/typography";
@@ -29,5 +20,4 @@ $show-guides:false;
   @import "card-underline";
   @import "header-block";
   @import "logo";
-
 }
