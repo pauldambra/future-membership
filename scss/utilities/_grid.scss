@@ -19,8 +19,14 @@
   }
 
   &.collapse-small{
-    margin-left:0;
-    margin-right:0;
+    @include media("max-width:749px"){
+      margin-left:0;
+      margin-right:0;
+
+      .column{
+        padding:0;
+      }
+    }
   }
 }
 

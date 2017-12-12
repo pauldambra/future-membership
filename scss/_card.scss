@@ -5,19 +5,21 @@
   text-decoration:none;
 
   h3, .h3{
-    font-size:24px;
+    font-size:20px;
+    line-height:32px;
     position:relative;
     background:$white;
     margin-right:$half-spacing-unit;
 
     @include media(medium){
-      padding:$quarter-spacing-unit;
+      padding:0 $quarter-spacing-unit;
     }
   }
 
   h4, .h4{
     @include regular;
     font-size:16px;
+    line-height:32px;
     position:relative;
     background:$white;
     margin-right:$half-spacing-unit;
@@ -66,5 +68,14 @@
 
   &:active, &:focus, &:hover{
     // TBC
+  }
+}
+
+.collapse-small .card{
+  @include media("max-width:479px"){
+    h3, .h3, h4, .h4{
+      margin:0;
+      padding:0 $quarter-spacing-unit;
+    }
   }
 }
