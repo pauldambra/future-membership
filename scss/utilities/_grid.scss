@@ -36,3 +36,20 @@
     }
   }
 }
+
+// responsive margins
+.margin-bs{
+  margin-bottom:$quarter-spacing-unit;
+
+  @include media(medium){
+    margin-bottom:$half-spacing-unit;
+  }
+
+  @include media(large){
+    margin-bottom:$base-spacing-unit;
+  }
+}
+
+.margin-bl{
+  margin-bottom:$half-spacing-unit;
+}

@@ -7234,6 +7234,18 @@ Variables - Co-op Front-end Toolkit
   .fm .column.padding-xlarge-24 {
     padding: 0 24px; } }
 
+.fm .margin-bs {
+  margin-bottom: 16px; }
+  @media (min-width: 750px) {
+    .fm .margin-bs {
+      margin-bottom: 32px; } }
+  @media (min-width: 960px) {
+    .fm .margin-bs {
+      margin-bottom: 64px; } }
+
+.fm .margin-bl {
+  margin-bottom: 32px; }
+
 .fm .align-right {
   text-align: right; }
 
