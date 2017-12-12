@@ -12,9 +12,16 @@
   }
 }
 
-.row.collapse{
-  margin-left:0;
-  margin-right:0;
+.row{
+  &.collapse{
+    margin-left:0;
+    margin-right:0;
+  }
+
+  &.collapse-small{
+    margin-left:0;
+    margin-right:0;
+  }
 }
 
 .column{
