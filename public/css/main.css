@@ -7215,6 +7215,9 @@ Variables - Co-op Front-end Toolkit
   @media (min-width: 960px) {
     .fm .wrap {
       padding: 0 10px; } }
+  @media (max-width: 959px) {
+    .fm .wrap.padded-small {
+      padding: 0 16px; } }
 
 .fm .row.collapse {
   margin-left: 0;
@@ -7226,14 +7229,6 @@ Variables - Co-op Front-end Toolkit
 @media (min-width: 1300px) {
   .fm .column.padding-xlarge-24 {
     padding: 0 24px; } }
-
-@media (min-width: 960px) {
-  .fm .column.padding-large-0 {
-    padding: 0; } }
-
-@media (min-width: 1300px) {
-  .fm .column.padding-xlarge-8 {
-    padding: 0 8px; } }
 
 .fm .align-right {
   text-align: right; }
@@ -7283,6 +7278,12 @@ Variables - Co-op Front-end Toolkit
   @media (min-width: 960px) {
     .fm p, .fm .p, .fm ul {
       line-height: 24px; } }
+
+.fm b, .fm strong {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .wf-active .fm b, .wf-active .fm strong {
+    font-family: "AvenirNextLTW01-Demi";
+    font-weight: normal; }
 
 .fm a {
   border: none;
@@ -7449,6 +7450,15 @@ Variables - Co-op Front-end Toolkit
   .fm .card-underline:active, .fm .card-underline:focus, .fm .card-underline:hover {
     padding-bottom: 0;
     border-bottom-width: 3px; }
+
+.fm .header .column {
+  padding: 0 16px; }
+  @media (min-width: 960px) {
+    .fm .header .column {
+      padding: 0; } }
+  @media (min-width: 1300px) {
+    .fm .header .column {
+      padding: 0 8px; } }
 
 .fm .heading-block {
   background: #ffffff;

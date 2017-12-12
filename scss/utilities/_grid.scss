@@ -4,6 +4,12 @@
   @include media(large){
     padding:0 10px;
   }
+
+  &.padded-small{
+    @include media("max-width:959px"){
+      padding:0 16px;
+    }
+  }
 }
 
 .row.collapse{
@@ -20,18 +26,6 @@
   &.padding-xlarge-24{
     @include media(xlarge){
       padding:0 $quarter-spacing-unit*1.5;
-    }
-  }
-
-  &.padding-large-0{
-    @include media(large){
-      padding:0;
-    }
-  }
-
-  &.padding-xlarge-8{
-    @include media(xlarge){
-      padding:0 8px;
     }
   }
 }

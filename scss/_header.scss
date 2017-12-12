@@ -1,0 +1,13 @@
+.header{
+  .column{
+    padding:0 $quarter-spacing-unit;
+
+    @include media(large){
+      padding:0;
+    }
+
+    @include media(xlarge){
+      padding:0 8px;
+    }
+  }
+}

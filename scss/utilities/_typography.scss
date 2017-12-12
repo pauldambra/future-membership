@@ -44,6 +44,10 @@ p, .p, ul{
   }
 }
 
+b, strong{
+  @include bold;
+}
+
 a {
   border:none;
   text-decoration:underline;
