@@ -7214,9 +7214,9 @@ Variables - Co-op Front-end Toolkit
   padding: 0; }
   @media (min-width: 960px) {
     .fm .wrap {
-      padding: 0 16px; } }
+      padding: 0 10px; } }
 
-.fm .row {
+.fm .row.collapse {
   margin-left: 0;
   margin-right: 0; }
 
@@ -7262,9 +7262,6 @@ Variables - Co-op Front-end Toolkit
 
 .fm .bg-light-turquoise {
   background-color: #72DCDB; }
-
-.fm .column {
-  border: 1px dashed pink; }
 
 .fm .row.small-reverse {
   display: -ms-flexbox;

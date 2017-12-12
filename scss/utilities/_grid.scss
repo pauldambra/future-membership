@@ -2,11 +2,11 @@
   padding:0;
 
   @include media(large){
-    padding:0 16px;
+    padding:0 10px;
   }
 }
 
-.row{
+.row.collapse{
   margin-left:0;
   margin-right:0;
 }
