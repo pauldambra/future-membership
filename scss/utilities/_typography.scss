@@ -62,6 +62,15 @@ a {
   > li{
     margin:0 0 1em;
   }
+
+  &.indent-small{ // modifier for fm dashboard
+    @include media(small){
+      margin-left:$quarter-spacing-unit;
+    }
+    @include media(medium){
+      margin-left:0;
+    }
+  }
 }
 
 .mega{
