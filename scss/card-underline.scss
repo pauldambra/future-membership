@@ -22,9 +22,13 @@
   &:active, &:focus, &:hover{
     padding-bottom:0;
     border-bottom-width:3px;
+  }
+}
 
-    h3, .h3{
-//      color:$mid-turquoise;
+.column.medium-6{ // handle indent for dashboard exclusives
+  .card-underline{
+    @include media(large){
+      margin:0 $quarter-spacing-unit;
     }
   }
 }

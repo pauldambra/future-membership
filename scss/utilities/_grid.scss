@@ -59,3 +59,7 @@
 .margin-bl{
   margin-bottom:$half-spacing-unit;
 }
+
+// Padding helpers
+.padding-rq { padding-right: $quarter-spacing-unit; }
+.padding-lq { padding-left: $quarter-spacing-unit; }

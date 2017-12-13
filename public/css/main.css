@@ -7249,6 +7249,12 @@ Variables - Co-op Front-end Toolkit
 .fm .margin-bl {
   margin-bottom: 32px; }
 
+.fm .padding-rq {
+  padding-right: 16px; }
+
+.fm .padding-lq {
+  padding-left: 16px; }
+
 .fm .align-right {
   text-align: right; }
 
@@ -7276,6 +7282,12 @@ Variables - Co-op Front-end Toolkit
 
 .fm .bg-light-turquoise {
   background-color: #72DCDB; }
+
+.fm .hidden-small {
+  display: none; }
+  @media (min-width: 750px) {
+    .fm .hidden-small {
+      display: block; } }
 
 .fm .row.small-reverse {
   display: -ms-flexbox;
@@ -7403,10 +7415,16 @@ Variables - Co-op Front-end Toolkit
     @media (min-width: 750px) {
       .fm .card .image + h3, .fm .card .image + .h4, .fm .card .image + h4, .fm .card .image + .h4 {
         margin: -64px 32px 0 0; } }
+  @media (max-width: 749px) {
+    .fm .card .image.hidden-small + h3, .fm .card .image.hidden-small + .h4, .fm .card .image.hidden-small + h4, .fm .card .image.hidden-small + .h4 {
+      margin: 0; } }
 
 @media (max-width: 479px) {
   .fm .collapse-small .card h3, .fm .collapse-small .card .h3, .fm .collapse-small .card h4, .fm .collapse-small .card .h4 {
-    margin: 0;
+    margin: 0; } }
+
+@media (max-width: 749px) {
+  .fm .collapse-small .card h3, .fm .collapse-small .card .h3, .fm .collapse-small .card h4, .fm .collapse-small .card .h4 {
     padding: 0 16px; } }
 
 .fm .card-offset {
@@ -7482,6 +7500,10 @@ Variables - Co-op Front-end Toolkit
   .fm .card-underline:active, .fm .card-underline:focus, .fm .card-underline:hover {
     padding-bottom: 0;
     border-bottom-width: 3px; }
+
+@media (min-width: 960px) {
+  .fm .column.medium-6 .card-underline {
+    margin: 0 16px; } }
 
 .fm .header .column {
   padding: 0 16px; }

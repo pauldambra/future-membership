@@ -66,15 +66,24 @@
     }
   }
 
+  .image.hidden-small + h3, .image.hidden-small + .h4, .image.hidden-small + h4, .image.hidden-small + .h4{
+    @include media("max-width:749px"){
+      margin:0;
+    }
+  }
+
   &:active, &:focus, &:hover{
     // TBC
   }
 }
 
 .collapse-small .card{
-  @include media("max-width:479px"){
-    h3, .h3, h4, .h4{
+
+  h3, .h3, h4, .h4{
+    @include media("max-width:479px"){
       margin:0;
+    }
+    @include media("max-width:749px"){
       padding:0 $quarter-spacing-unit;
     }
   }

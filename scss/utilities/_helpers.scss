@@ -35,3 +35,11 @@
 .bg-light-turquoise{
   background-color:$light-turquoise;
 }
+
+.hidden-small{
+  display:none;
+
+  @include media(medium){
+    display:block;
+  }
+}
