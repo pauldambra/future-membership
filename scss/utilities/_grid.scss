@@ -6,8 +6,19 @@
   }
 
   &.padded-small{
-    @include media("max-width:959px"){
+    padding:0 16px;
+
+    @include media(large){
+      padding:0 10px;
+    }
+  }
+
+  &.padded-medium{
+    @include media(medium){
       padding:0 16px;
+    }
+    @include media(large){
+      padding:0 10px;
     }
   }
 }

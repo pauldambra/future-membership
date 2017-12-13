@@ -57,6 +57,12 @@
     }
   }
 
+  .border-bottom{
+    padding-top:2px;
+    border-bottom:1px solid $mid-turquoise;
+    margin-right:$half-spacing-unit;
+  }
+
   // overlay text block onto image
   .image + h3, .image + .h4, .image + h4, .image + .h4{
     margin:-$base-spacing-unit $half-spacing-unit 0 0;
@@ -73,7 +79,10 @@
   }
 
   &:active, &:focus, &:hover{
-    // TBC
+    .border-bottom{
+      padding-top:0;
+      border-bottom:3px solid $mid-turquoise;
+    }
   }
 }
 

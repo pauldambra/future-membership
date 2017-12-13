@@ -7215,9 +7215,17 @@ Variables - Co-op Front-end Toolkit
   @media (min-width: 960px) {
     .fm .wrap {
       padding: 0 10px; } }
-  @media (max-width: 959px) {
-    .fm .wrap.padded-small {
+  .fm .wrap.padded-small {
+    padding: 0 16px; }
+    @media (min-width: 960px) {
+      .fm .wrap.padded-small {
+        padding: 0 10px; } }
+  @media (min-width: 750px) {
+    .fm .wrap.padded-medium {
       padding: 0 16px; } }
+  @media (min-width: 960px) {
+    .fm .wrap.padded-medium {
+      padding: 0 10px; } }
 
 .fm .row.collapse {
   margin-left: 0;
@@ -7410,6 +7418,10 @@ Variables - Co-op Front-end Toolkit
       width: 100%;
       left: 0;
       top: 0; }
+  .fm .card .border-bottom {
+    padding-top: 2px;
+    border-bottom: 1px solid #0F8482;
+    margin-right: 32px; }
   .fm .card .image + h3, .fm .card .image + .h4, .fm .card .image + h4, .fm .card .image + .h4 {
     margin: -64px 32px 0 0; }
     @media (min-width: 750px) {
@@ -7418,6 +7430,9 @@ Variables - Co-op Front-end Toolkit
   @media (max-width: 749px) {
     .fm .card .image.hidden-small + h3, .fm .card .image.hidden-small + .h4, .fm .card .image.hidden-small + h4, .fm .card .image.hidden-small + .h4 {
       margin: 0; } }
+  .fm .card:active .border-bottom, .fm .card:focus .border-bottom, .fm .card:hover .border-bottom {
+    padding-top: 0;
+    border-bottom: 3px solid #0F8482; }
 
 @media (max-width: 479px) {
   .fm .collapse-small .card h3, .fm .collapse-small .card .h3, .fm .collapse-small .card h4, .fm .collapse-small .card .h4 {
