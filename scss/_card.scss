@@ -59,7 +59,7 @@
 
   .border-bottom{
     padding-top:2px;
-    border-bottom:1px solid $mid-turquoise;
+    border-bottom:1px solid $body-copy;
     margin-right:$half-spacing-unit;
   }
 
@@ -81,7 +81,7 @@
   &:active, &:focus, &:hover{
     .border-bottom{
       padding-top:0;
-      border-bottom:3px solid $mid-turquoise;
+      border-bottom:3px solid $body-copy;
     }
   }
 }

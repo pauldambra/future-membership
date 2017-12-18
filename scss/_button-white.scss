@@ -11,11 +11,16 @@
     font-size:16px;
   }
 
-  &:active, &:focus, &:hover{
+  &:active, &:hover{
     background:none;
     box-shadow:none;
-    border:1px solid $coop-grey;
+    border:2px solid $coop-grey;
     outline:none;
+  }
+
+  &:focus{
+    transition:none;
+    background:$white;
   }
 
 }

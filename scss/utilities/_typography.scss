@@ -53,6 +53,10 @@ a {
   text-decoration:underline;
   text-decoration-skip: ink;
   color:$body-copy;
+
+  &:hover{
+//    color:$end-of-days;
+  }
 }
 
 .list-unformatted{
