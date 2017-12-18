@@ -7238,6 +7238,9 @@ Variables - Co-op Front-end Toolkit
     .fm .row.collapse-small .column {
       padding: 0; } }
 
+.fm .row.clear-left-column .medium-6:nth-child(odd) {
+  clear: left; }
+
 .fm .column.padding-q {
   padding: 0 16px; }
 
@@ -7245,14 +7248,15 @@ Variables - Co-op Front-end Toolkit
   .fm .column.padding-xlarge-24 {
     padding: 0 24px; } }
 
-.fm .flex {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .fm .flex > .column {
+@supports ((display: -ms-flexbox) or (display: flex)) {
+  .fm .flex {
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .fm .flex > .column {
+      display: -ms-flexbox;
+      display: flex; } }
 
 .fm .margin-bs {
   margin-bottom: 16px; }

@@ -39,6 +39,12 @@
       }
     }
   }
+
+  &.clear-left-column{
+    .medium-6:nth-child(odd){
+      clear:left;
+    }
+  }
 }
 
 .column{
@@ -55,12 +61,14 @@
 }
 
 // flex enhanced equal height columns
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-
-  > .column{
+@supports (display: flex) {
+  .flex {
     display: flex;
+    flex-wrap: wrap;
+
+    > .column{
+      display: flex;
+    }
   }
 }
 
