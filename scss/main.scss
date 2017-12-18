@@ -2,7 +2,7 @@
 @import "coop-toolkit";
 
 // fm variables
-$show-guides:false;
+$show-guides:true;
 
 // fm wrapper class
 .fm{
@@ -21,4 +21,8 @@ $show-guides:false;
   @import "header";
   @import "heading-block";
   @import "logo";
+}
+
+body{
+  background:red;
 }
