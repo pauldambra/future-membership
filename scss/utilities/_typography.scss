@@ -54,8 +54,8 @@ a {
   text-decoration-skip: ink;
   color:$body-copy;
 
-  &:hover{
-//    color:$end-of-days;
+  &:active, &:focus, &:hover{
+    color:$darker-blue;
   }
 }
 

@@ -7296,6 +7296,9 @@ Variables - Co-op Front-end Toolkit
   color: #385C0A;
   border-color: #385C0A; }
 
+.fm a.mid-green:active, .fm a.mid-green:focus, .fm a.mid-green:hover, .fm a.dark-green:active, .fm a.dark-green:focus, .fm a.dark-green:hover {
+  color: #bad303; }
+
 .fm .dark-red {
   color: #9F2A00;
   border-color: #9F2A00; }
@@ -7351,6 +7354,8 @@ Variables - Co-op Front-end Toolkit
   text-decoration: underline;
   text-decoration-skip: ink;
   color: #282828; }
+  .fm a:active, .fm a:focus, .fm a:hover {
+    color: #406A91; }
 
 .fm .list-unformatted {
   list-style: none;
@@ -7465,9 +7470,11 @@ Variables - Co-op Front-end Toolkit
   @media (max-width: 749px) {
     .fm .card .image.hidden-small + h3, .fm .card .image.hidden-small + .h4, .fm .card .image.hidden-small + h4, .fm .card .image.hidden-small + .h4 {
       margin: 0; } }
-  .fm .card:active .border-bottom, .fm .card:focus .border-bottom, .fm .card:hover .border-bottom {
-    padding-top: 0;
-    border-bottom: 3px solid #282828; }
+  .fm .card:active, .fm .card:focus, .fm .card:hover {
+    color: #282828; }
+    .fm .card:active .border-bottom, .fm .card:focus .border-bottom, .fm .card:hover .border-bottom {
+      padding-top: 0;
+      border-bottom: 3px solid #282828; }
 
 @media (max-width: 479px) {
   .fm .collapse-small .card h3, .fm .collapse-small .card .h3, .fm .collapse-small .card h4, .fm .collapse-small .card .h4 {
