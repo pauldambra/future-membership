@@ -7279,6 +7279,9 @@ Variables - Co-op Front-end Toolkit
 .fm .align-right {
   text-align: right; }
 
+.fm .align-center {
+  text-align: center; }
+
 .fm .block {
   display: block; }
 
@@ -7306,6 +7309,9 @@ Variables - Co-op Front-end Toolkit
 
 .fm .bg-light-turquoise {
   background-color: #72DCDB; }
+
+.fm .bg-lighter-turquoise {
+  background-color: #e3f8f8; }
 
 .fm .hidden-small {
   display: none; }
@@ -7365,6 +7371,16 @@ Variables - Co-op Front-end Toolkit
     .fm .mega {
       font-size: 46px;
       line-height: 64px; } }
+
+.fm .banner {
+  padding: .5em 0; }
+  .fm .banner p {
+    font-size: 16px;
+    padding: 0 .5em;
+    margin: 0; }
+    @media (min-width: 750px) {
+      .fm .banner p {
+        padding: 0 1em; } }
 
 .fm .button-white {
   margin: 0;

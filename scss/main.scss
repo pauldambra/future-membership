@@ -14,6 +14,7 @@ $show-guides:false;
   @import "utilities/typography";
 
   // fm component partials
+  @import "banner";
   @import "button-white";
   @import "card";
   @import "card-offset";

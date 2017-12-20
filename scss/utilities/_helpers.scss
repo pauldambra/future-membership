@@ -3,6 +3,12 @@
   text-align:right;
 }
 
+// text helpers
+.align-center{
+  text-align:center;
+}
+
+
 .block{
   display:block;
 }
@@ -38,6 +44,10 @@
 
 .bg-light-turquoise{
   background-color:$light-turquoise;
+}
+
+.bg-lighter-turquoise{
+  background-color:$lighter-turquoise;
 }
 
 .hidden-small{
