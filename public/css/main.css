@@ -7579,6 +7579,8 @@ Variables - Co-op Front-end Toolkit
 .fm .logo {
   width: 38px;
   height: 40px; }
+  .fm .logo a {
+    display: block; }
   .fm .logo .image {
     height: 0;
     overflow: hidden;
