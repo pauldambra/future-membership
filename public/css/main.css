@@ -7569,7 +7569,7 @@ Variables - Co-op Front-end Toolkit
       padding: 0; } }
   @media (min-width: 1300px) {
     .fm .header .column {
-      padding: 0 8px; } }
+      padding: 0 16px; } }
 
 .fm .heading-block {
   background: #ffffff;
