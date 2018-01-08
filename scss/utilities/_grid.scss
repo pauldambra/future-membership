@@ -21,6 +21,13 @@
       padding:0 10px;
     }
   }
+
+  > .row{
+    @include media(large){
+      margin-left:-10px;
+      margin-right:-10px;
+    }
+  }
 }
 
 .row{

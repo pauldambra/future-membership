@@ -7226,6 +7226,10 @@ Variables - Co-op Front-end Toolkit
   @media (min-width: 960px) {
     .fm .wrap.padded-medium {
       padding: 0 10px; } }
+  @media (min-width: 960px) {
+    .fm .wrap > .row {
+      margin-left: -10px;
+      margin-right: -10px; } }
 
 .fm .row.collapse {
   margin-left: 0;

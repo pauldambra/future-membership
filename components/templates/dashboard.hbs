@@ -3,12 +3,12 @@
 </div>
 
 <div class="row collapse margin-bl">
-{{>@banner}}
+  {{>@banner}}
 </div>
 
 <div class="wrap">
     <div class="row collapse">
-        <div class="column padding-q padding-xlarge-24">
+        <div class="column padding-q">
             <h2 class="p medium">Welcome to your account, Gail</h2>
         </div>
     </div>
@@ -29,20 +29,26 @@
 
 <div class="wrap">
     <div class="row collapse">
-        <div class="column padding-q padding-xlarge-24">
+        <div class="column padding-q">
             <h2 class="p medium">Your community news and cause</h2>
         </div>
     </div>
 </div>
 
 <div class="wrap padded-small">
-    <div class="row margin-bl">
+    <div class="row collapse margin-bs">
         <div class="column medium-6">
             {{>@card-green-mega}}
         </div>
         <div class="column medium-6">
             {{>@card-double-mega}}
         </div>
+    </div>
+</div>
+
+<div class="wrap padded-medium">
+    <div class="row collapse margin-bs">
+        {{>@card-2-column-medium}}
     </div>
 </div>
 
@@ -61,11 +67,11 @@
 <div class="wrap padded-small">
     <div class="row collapse margin-bl">
         <div class="column all-11 large-8 large-offset-1">
-            <div class="row clear-left-medium flex">
+            <div class="row clear-left-column flex">
 
 
 
-                                    <div class="column medium-6 margin-bl">
+                      <div class="column medium-6 margin-bl">
                         <a class="card card-underline" href="http://www.co-operativefood.co.uk/membership/?utm_source=membership.coop.co.uk&amp;utm_medium=referral&amp;utm_campaign=memberOffers&amp;utm_content=generic" target="_blank" rel="noopener noreferrer" data-track-click="{&quot;type&quot;: &quot;click&quot;, &quot;label&quot;: &quot;member_benefit_food_card&quot;}">
                             <h3>Food</h3>
                                 <p>Buy Co-op brand food and get 5% back to spend next time you shop with us.</p>
@@ -107,8 +113,61 @@
 
 <div class="wrap">
     <div class="row collapse">
-        <div class="column padding-q padding-xlarge-24">
+        <div class="column padding-q">
             <h2 class="p medium">Your Co-op offers</h2>
+        </div>
+    </div>
+</div>
+
+<div class="wrap padded-medium">
+    <div class="row collapse-small">
+        <div class="column medium-6 large-6 margin-bl">
+          <a class="card" href="#">
+              <div class="image">
+                  <img src="/images/car-insurance.jpg" width="448" height="280" alt="Group 4" />
+              </div>
+              <h4 class="h4">Insurance</h4>
+              <h3 class="h3">Exclusive Member prices on car insurance</h3>
+              <div class="border-bottom"></div>
+          </a>
+        </div>
+        <div class="column medium-6 large-6 margin-bl">
+          <a class="card" href="#">
+              <div class="image">
+                  <img src="/images/tomato-and-chilli-king-prawn-skewers.jpg" width="448" height="280" alt="Group 4" />
+              </div>
+              <h4 class="h4">Food</h4>
+              <h3 class="h3">Get great value on food, plus 5% back on Co-op products</h3>
+              <div class="border-bottom"></div>
+          </a>
+        </div>
+        <div class="column medium-6 large-6 margin-bl">
+          <a class="card" href="#">
+              <div class="image">
+                  <img src="/images/electrical.jpg" width="448" height="280" alt="Group 4" />
+              </div>
+              <h4 class="h4">Electrical</h4>
+              <h3 class="h3">You can now spend your 5% on Co-op Electrical</h3>
+              <div class="border-bottom"></div>
+          </a>
+        </div>
+        <div class="column medium-6 large-6 margin-bl">
+          <a class="card" href="#">
+              <div class="image">
+                  <img src="/images/beds.jpg" width="448" height="280" alt="Group 4" />
+              </div>
+              <h4 class="h4">Beds</h4>
+              <h3 class="h3">Get 15% off on our new beds website</h3>
+              <div class="border-bottom"></div>
+          </a>
+        </div>
+    </div>
+</div>
+
+<div class="wrap">
+    <div class="row collapse">
+        <div class="column padding-q">
+            <h2 class="p medium">Grid with uneven length cards and 2 breakpoints for columns</h2>
         </div>
     </div>
 </div>
@@ -119,10 +178,14 @@
             {{>@card-with-image}}
         </div>
         <div class="column medium-6 large-4 margin-bs">
-            {{>@card-with-image}}
-        </div>
-        <div class="column medium-6 large-4 margin-bs">
-            {{>@card-with-image}}
+            <a class="card" href="#">
+                <div class="image">
+                    <img src="/images/group-4.jpg" width="448" height="280" alt="Group 4" />
+                </div>
+                <h4 class="h4">Category</h4>
+                <h3 class="h3">£20 million given to local causes in 2017 £20 million given to local causes in 2017 £20 million given to local causes in 2017</h3>
+                <div class="border-bottom"></div>
+            </a>
         </div>
         <div class="column medium-6 large-4 margin-bs">
             {{>@card-with-image}}
