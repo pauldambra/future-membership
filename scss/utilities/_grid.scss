@@ -40,9 +40,23 @@
     }
   }
 
-  &.clear-left-column{
+  &.clear-left-medium{
     .medium-6:nth-child(odd){
+      // set odd item clearing
       clear:left;
+    }
+  }
+
+  &.clear-left-large{
+    @include media(large){
+      // unset odd item clearing
+      .medium-6:nth-child(odd){
+        clear:none;
+      }
+      // set 4th item clearing
+      .large-4:nth-child(3n+1){
+        clear:left;
+      }
     }
   }
 }
@@ -65,6 +79,10 @@
   .flex {
     display: flex;
     flex-wrap: wrap;
+
+    &:before {  // unset clearfix:before as affects flex Safari
+      display: inline;
+    }
 
     > .column{
       display: flex;
