@@ -40,9 +40,21 @@
     }
   }
 
-  &.clear-left-column{
+  &.clear-left-medium{
     .medium-6:nth-child(odd){
       clear:left;
+    }
+  }
+
+  &.clear-left-large{
+    @include media(large){
+      .large-4:nth-child(3n+1){
+        clear:left;
+      }
+      // unset medium clearing
+      .medium-6:nth-child(odd){
+        clear:none;
+      }
     }
   }
 }

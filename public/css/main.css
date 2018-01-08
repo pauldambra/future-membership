@@ -7238,8 +7238,14 @@ Variables - Co-op Front-end Toolkit
     .fm .row.collapse-small .column {
       padding: 0; } }
 
-.fm .row.clear-left-column .medium-6:nth-child(odd) {
+.fm .row.clear-left-medium .medium-6:nth-child(odd) {
   clear: left; }
+
+@media (min-width: 960px) {
+  .fm .row.clear-left-large .large-4:nth-child(3n+1) {
+    clear: left; }
+  .fm .row.clear-left-large .medium-6:nth-child(odd) {
+    clear: none; } }
 
 .fm .column.padding-q {
   padding: 0 16px; }
