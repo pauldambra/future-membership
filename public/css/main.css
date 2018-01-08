@@ -7322,9 +7322,6 @@ Variables - Co-op Front-end Toolkit
     .fm .hidden-small {
       display: block; } }
 
-.fm .column {
-  border: 1px dashed pink; }
-
 .fm .row.small-reverse {
   display: -ms-flexbox;
   display: flex;
@@ -7479,8 +7476,11 @@ Variables - Co-op Front-end Toolkit
       padding-top: 0;
       border-bottom: 3px solid #282828; }
 
-.fm .card .row h3, .fm .card .row p {
+.fm .card .row h3 {
   padding: 0 16px; }
+
+.fm .card .row p {
+  padding: 16px; }
 
 @media (max-width: 479px) {
   .fm .collapse-small .card h3, .fm .collapse-small .card .h3, .fm .collapse-small .card h4, .fm .collapse-small .card .h4 {

@@ -88,9 +88,14 @@
   }
 }
 
-.card .row h3, .card .row p {
+.card .row h3 {
   @include media("max-width:749px")
   padding:  0 16px;
+}
+
+.card .row p {
+  @include media("max-width:749px")
+  padding:  16px;
 }
 
 .collapse-small .card{
