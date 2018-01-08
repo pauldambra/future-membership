@@ -1,4 +1,7 @@
 .header{
+
+  padding: 16px 0 0 0;
+
   .column{
     padding:0 $quarter-spacing-unit;
 
@@ -7,7 +10,7 @@
     }
 
     @include media(xlarge){
-      padding:0 8px;
+      padding:0 16px;
     }
   }
 }
