@@ -7322,6 +7322,9 @@ Variables - Co-op Front-end Toolkit
     .fm .hidden-small {
       display: block; } }
 
+.fm .column {
+  border: 1px dashed pink; }
+
 .fm .row.small-reverse {
   display: -ms-flexbox;
   display: flex;
@@ -7562,14 +7565,16 @@ Variables - Co-op Front-end Toolkit
   .fm .column.medium-6 .card-underline {
     margin: 0 16px; } }
 
-.fm .header .column {
-  padding: 0 16px; }
-  @media (min-width: 960px) {
-    .fm .header .column {
-      padding: 0; } }
-  @media (min-width: 1300px) {
-    .fm .header .column {
-      padding: 0 16px; } }
+.fm .header {
+  padding: 16px 0 0 0; }
+  .fm .header .column {
+    padding: 0 16px; }
+    @media (min-width: 960px) {
+      .fm .header .column {
+        padding: 0; } }
+    @media (min-width: 1300px) {
+      .fm .header .column {
+        padding: 0 16px; } }
 
 .fm .heading-block {
   background: #ffffff;
@@ -7577,8 +7582,9 @@ Variables - Co-op Front-end Toolkit
   padding: 32px 32px 16px; }
 
 .fm .logo {
-  width: 38px;
-  height: 40px; }
+  width: 52px;
+  height: 40px;
+  padding-left: 16px; }
   .fm .logo a {
     display: block; }
   .fm .logo .image {
