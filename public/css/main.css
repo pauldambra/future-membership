@@ -7254,6 +7254,8 @@ Variables - Co-op Front-end Toolkit
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    .fm .flex:before {
+      display: inline; }
     .fm .flex > .column {
       display: -ms-flexbox;
       display: flex; } }

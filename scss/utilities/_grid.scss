@@ -66,6 +66,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    &:before {  // unset clearfix:before as affects flex Safari
+      display: inline;
+    }
+
     > .column{
       display: flex;
     }
