@@ -42,18 +42,20 @@
 
   &.clear-left-medium{
     .medium-6:nth-child(odd){
+      // set odd item clearing
       clear:left;
     }
   }
 
   &.clear-left-large{
     @include media(large){
-      .large-4:nth-child(3n+1){
-        clear:left;
-      }
-      // unset medium clearing
+      // unset odd item clearing
       .medium-6:nth-child(odd){
         clear:none;
+      }
+      // set 4th item clearing
+      .large-4:nth-child(3n+1){
+        clear:left;
       }
     }
   }
