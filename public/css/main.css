@@ -7439,11 +7439,15 @@ Variables - Co-op Front-end Toolkit
   border: none;
   text-decoration: none; }
   .fm .card h3, .fm .card .h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 32px;
     position: relative;
     background: #ffffff;
     margin-right: 32px; }
+    .wf-active .fm .card h3, .wf-active .fm .card .h3 {
+      font-family: "AvenirNextLTW01-Demi";
+      font-weight: normal; }
     @media (min-width: 750px) {
       .fm .card h3, .fm .card .h3 {
         padding: 0 16px; } }

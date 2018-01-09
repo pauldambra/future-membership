@@ -5,6 +5,7 @@
   text-decoration:none;
 
   h3, .h3{
+    @include bold;
     font-size:20px;
     line-height:32px;
     position:relative;
