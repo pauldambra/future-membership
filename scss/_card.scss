@@ -33,12 +33,22 @@
     @include mega;
   }
 
+  h3.mega{
+    padding-left:0;
+    padding-right:0;
+
+    @include media(large){
+      padding-left:$quarter-spacing-unit;
+      padding-right:$quarter-spacing-unit;
+    }
+  }
+
   p{
     position:relative;
     background:$white;
     margin-right:$half-spacing-unit;
 
-    @include media(medium){
+    @include media(large){
       padding:0 $quarter-spacing-unit;
     }
   }
@@ -66,6 +76,7 @@
   // overlay text block onto image
   .image + h3, .image + .h4, .image + h4, .image + .h4{
     margin:-$base-spacing-unit $half-spacing-unit 0 0;
+    padding-top:8px;
 
     @include media(medium){
       margin:-$base-spacing-unit $half-spacing-unit 0 0;
@@ -89,13 +100,33 @@
 }
 
 .card .row h3 {
-  @include media("max-width:749px")
-  padding:  0 16px;
+  padding-left:16px;
+  padding-right:16px;
+
+  @include media(medium){
+    padding-left:0;
+    padding-right:0;
+  }
+
+  @include media(large){
+    padding-left:16px;
+    padding-right:16px;
+  }
 }
 
 .card .row p {
-  @include media("max-width:749px")
-  padding:  16px;
+  padding-left:16px;
+  padding-right:16px;
+
+  @include media(medium){
+    padding-left:0;
+    padding-right:0;
+  }
+
+  @include media(large){
+    padding-left:16px;
+    padding-right:16px;
+  }
 }
 
 .collapse-small .card{
@@ -105,7 +136,15 @@
       margin:0;
     }
     @include media("max-width:749px"){
-      padding:0 $quarter-spacing-unit;
+      padding:8px $quarter-spacing-unit;
     }
+  }
+
+  h4 + h3, .h4 + h3, .h4+ .h3, .h4 + h3{
+    padding-top:0;
+  }
+
+  h3 + p, .h3 + p{
+    padding:0 $quarter-spacing-unit 8px;
   }
 }

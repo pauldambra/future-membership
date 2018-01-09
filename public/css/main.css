@@ -7279,8 +7279,20 @@ Variables - Co-op Front-end Toolkit
     .fm .margin-bs {
       margin-bottom: 64px; } }
 
+.fm .margin-bm {
+  margin-bottom: 16px; }
+  @media (min-width: 750px) {
+    .fm .margin-bm {
+      margin-bottom: 32px; } }
+
 .fm .margin-bl {
   margin-bottom: 32px; }
+
+.fm .margin-bxl {
+  margin-bottom: 32px; }
+  @media (min-width: 960px) {
+    .fm .margin-bxl {
+      margin-bottom: 64px; } }
 
 .fm .padding-rq {
   padding-right: 16px; }
@@ -7371,7 +7383,8 @@ Variables - Co-op Front-end Toolkit
 
 .fm .list-unformatted {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   .fm .list-unformatted > li {
     margin: 0 0 1em; }
   @media (min-width: 480px) {
@@ -7453,11 +7466,18 @@ Variables - Co-op Front-end Toolkit
       .fm .card .mega {
         font-size: 46px;
         line-height: 64px; } }
+  .fm .card h3.mega {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 960px) {
+      .fm .card h3.mega {
+        padding-left: 16px;
+        padding-right: 16px; } }
   .fm .card p {
     position: relative;
     background: #ffffff;
     margin-right: 32px; }
-    @media (min-width: 750px) {
+    @media (min-width: 960px) {
       .fm .card p {
         padding: 0 16px; } }
   .fm .card .image {
@@ -7475,7 +7495,8 @@ Variables - Co-op Front-end Toolkit
     border-bottom: 1px solid #282828;
     margin-right: 32px; }
   .fm .card .image + h3, .fm .card .image + .h4, .fm .card .image + h4, .fm .card .image + .h4 {
-    margin: -64px 32px 0 0; }
+    margin: -64px 32px 0 0;
+    padding-top: 8px; }
     @media (min-width: 750px) {
       .fm .card .image + h3, .fm .card .image + .h4, .fm .card .image + h4, .fm .card .image + .h4 {
         margin: -64px 32px 0 0; } }
@@ -7489,10 +7510,28 @@ Variables - Co-op Front-end Toolkit
       border-bottom: 3px solid #282828; }
 
 .fm .card .row h3 {
-  padding: 0 16px; }
+  padding-left: 16px;
+  padding-right: 16px; }
+  @media (min-width: 750px) {
+    .fm .card .row h3 {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media (min-width: 960px) {
+    .fm .card .row h3 {
+      padding-left: 16px;
+      padding-right: 16px; } }
 
 .fm .card .row p {
-  padding: 16px; }
+  padding-left: 16px;
+  padding-right: 16px; }
+  @media (min-width: 750px) {
+    .fm .card .row p {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media (min-width: 960px) {
+    .fm .card .row p {
+      padding-left: 16px;
+      padding-right: 16px; } }
 
 @media (max-width: 479px) {
   .fm .collapse-small .card h3, .fm .collapse-small .card .h3, .fm .collapse-small .card h4, .fm .collapse-small .card .h4 {
@@ -7500,7 +7539,13 @@ Variables - Co-op Front-end Toolkit
 
 @media (max-width: 749px) {
   .fm .collapse-small .card h3, .fm .collapse-small .card .h3, .fm .collapse-small .card h4, .fm .collapse-small .card .h4 {
-    padding: 0 16px; } }
+    padding: 8px 16px; } }
+
+.fm .collapse-small .card h4 + h3, .fm .collapse-small .card .h4 + h3, .fm .collapse-small .card .h4 + .h3, .fm .collapse-small .card .h4 + h3 {
+  padding-top: 0; }
+
+.fm .collapse-small .card h3 + p, .fm .collapse-small .card .h3 + p {
+  padding: 0 16px 8px; }
 
 .fm .card-offset {
   overflow: hidden; }

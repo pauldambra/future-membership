@@ -110,8 +110,24 @@
   }
 }
 
+.margin-bm{
+  margin-bottom:$quarter-spacing-unit;
+
+  @include media(medium){
+    margin-bottom:$half-spacing-unit;
+  }
+}
+
 .margin-bl{
   margin-bottom:$half-spacing-unit;
+}
+
+.margin-bxl{
+  margin-bottom:$half-spacing-unit;
+
+  @include media(large){
+    margin-bottom:$base-spacing-unit;
+  }
 }
 
 // Padding helpers
