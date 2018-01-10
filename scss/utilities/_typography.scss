@@ -54,6 +54,12 @@ a {
   text-decoration-skip: ink;
   color:$body-copy;
 
+  -webkit-transition: color .25s linear;
+  -moz-transition: color .25s linear;
+  -o-transition: color .25s linear;
+  -ms-transition: color .25s linear;
+  transition: color .25s linear;
+
   &:active, &:focus, &:hover{
     color:$darker-blue;
   }
@@ -80,4 +86,9 @@ a {
 
 .mega{
   @include mega;
+}
+
+::selection {
+    color: white;
+    background: $brand;
 }

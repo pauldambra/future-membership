@@ -59,12 +59,25 @@
     overflow:hidden;
     position:relative;
     padding-bottom:56.25%; // 16:9
+    background-color: $brand;
 
     img{
       position:absolute;
+      opacity: 1;
+
+      -webkit-transition: opacity .25s linear;
+      -moz-transition: opacity .25s linear;
+      -o-transition: opacity .25s linear;
+      -ms-transition: opacity .25s linear;
+      transition: opacity .25s linear;
+
       width:100%;
       left:0;
       top:0;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 
