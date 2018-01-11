@@ -7365,7 +7365,7 @@ Variables - Co-op Front-end Toolkit
   line-height: 32px; }
   @media (min-width: 960px) {
     .fm p, .fm .p, .fm ul {
-      line-height: 24px; } }
+      line-height: 28px; } }
 
 .fm b, .fm strong {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -7549,7 +7549,7 @@ Variables - Co-op Front-end Toolkit
   padding-top: 0; }
 
 .fm .collapse-small .card h3 + p, .fm .collapse-small .card .h3 + p {
-  padding: 0 16px 8px; }
+  padding: 8px 16px 8px; }
 
 .fm .card-offset {
   overflow: hidden; }
@@ -7618,7 +7618,7 @@ Variables - Co-op Front-end Toolkit
       .fm .card-underline h3, .fm .card-underline .h3 {
         font-size: 26px; } }
   .fm .card-underline p, .fm .card-underline .p {
-    font-size: 16px;
+    font-size: 18px;
     padding: 0;
     margin: 0 0 20px; }
   .fm .card-underline:active, .fm .card-underline:focus, .fm .card-underline:hover {
