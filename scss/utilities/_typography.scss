@@ -40,7 +40,7 @@ p, .p, ul{
   line-height:32px;
 
   @include media(large){
-    line-height:24px;
+    line-height:28px;
   }
 }
 
@@ -87,8 +87,11 @@ a {
 .mega{
   @include mega;
 }
+<<<<<<< HEAD
 
 ::selection {
     color: white;
     background: $brand;
 }
+=======
+>>>>>>> 7b187774aed485f5ba5bc56653819a594f112ae0
