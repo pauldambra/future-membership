@@ -81,3 +81,7 @@ a {
 .mega{
   @include mega;
 }
+
+h2, .h2 {
+  margin-bottom: 16px;
+}
