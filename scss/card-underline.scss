@@ -3,6 +3,7 @@
   color:$body-copy;
   border-bottom:1px solid $light-turquoise;
   padding-bottom:2px;
+  background-color: white;
 
   h3, .h3{
     padding:0;
@@ -22,6 +23,7 @@
   &:active, &:focus, &:hover{
     padding-bottom:0;
     border-bottom-width:3px;
+    background-color: white;
   }
 }
 

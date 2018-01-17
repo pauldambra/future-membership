@@ -54,14 +54,21 @@ a {
   text-decoration-skip: ink;
   color:$body-copy;
 
-  -webkit-transition: color .25s linear;
-  -moz-transition: color .25s linear;
-  -o-transition: color .25s linear;
-  -ms-transition: color .25s linear;
-  transition: color .25s linear;
+  -webkit-transition: background-color .25s linear;
+  -moz-transition: background-color .25s linear;
+  -o-transition: background-color .25s linear;
+  -ms-transition: background-color .25s linear;
+  transition: background-color .25s linear;
 
   &:active, &:focus, &:hover{
-    color:$darker-blue;
+    color: $dark-blue;
+    background-color: $cloudy;
+  }
+
+  &.card {
+    &:active, &:focus, &:hover{
+      background-color: white;
+    }
   }
 }
 
@@ -87,11 +94,12 @@ a {
 .mega{
   @include mega;
 }
-<<<<<<< HEAD
 
 ::selection {
     color: white;
     background: $brand;
 }
-=======
->>>>>>> 7b187774aed485f5ba5bc56653819a594f112ae0
+
+h2, .h2 {
+  margin-bottom: 16px;
+}

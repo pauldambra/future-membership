@@ -28,12 +28,6 @@
   border-color:$dark-green;
 }
 
-a.mid-green, a.dark-green{
-  &:active, &:focus, &:hover{
-    color:#bad303;
-  }
-}
-
 .dark-red{
     color:$dark-red;
     border-color:$dark-red;

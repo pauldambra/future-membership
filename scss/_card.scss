@@ -59,25 +59,12 @@
     overflow:hidden;
     position:relative;
     padding-bottom:56.25%; // 16:9
-    background-color: $brand;
 
     img{
       position:absolute;
-      opacity: 1;
-
-      -webkit-transition: opacity .25s linear;
-      -moz-transition: opacity .25s linear;
-      -o-transition: opacity .25s linear;
-      -ms-transition: opacity .25s linear;
-      transition: opacity .25s linear;
-
       width:100%;
       left:0;
       top:0;
-
-      &:hover {
-        opacity: 0.5;
-      }
     }
   }
 
@@ -105,6 +92,7 @@
 
   &:active, &:focus, &:hover{
     color:$body-copy;
+    // background-color: white;
 
     .border-bottom{
       padding-top:0;
@@ -147,16 +135,16 @@
 
   h3, .h3, h4, .h4{
     @include media("max-width:479px"){
-      margin:0;
+      margin: -32px 16px 0 0;
     }
     @include media("max-width:749px"){
-      padding:8px $quarter-spacing-unit;
+      padding: 8px 16px 0 16px;
     }
   }
 
   h4 + h3, .h4 + h3, .h4+ .h3, .h4 + h3{
     padding-top:0;
-    padding-bottom:8px;
+    padding-bottom: 8px;
   }
 
   h3 + p, .h3 + p{

@@ -7320,9 +7320,6 @@ Variables - Co-op Front-end Toolkit
   color: #385C0A;
   border-color: #385C0A; }
 
-.fm a.mid-green:active, .fm a.mid-green:focus, .fm a.mid-green:hover, .fm a.dark-green:active, .fm a.dark-green:focus, .fm a.dark-green:hover {
-  color: #bad303; }
-
 .fm .dark-red {
   color: #9F2A00;
   border-color: #9F2A00; }
@@ -7378,9 +7375,12 @@ Variables - Co-op Front-end Toolkit
   text-decoration: underline;
   text-decoration-skip: ink;
   color: #282828;
-  transition: color .25s linear; }
+  transition: background-color .25s linear; }
   .fm a:active, .fm a:focus, .fm a:hover {
-    color: #406A91; }
+    color: #334C89;
+    background-color: #F2F2F2; }
+  .fm a.card:active, .fm a.card:focus, .fm a.card:hover {
+    background-color: white; }
 
 .fm .list-unformatted {
   list-style: none;
@@ -7410,6 +7410,9 @@ Variables - Co-op Front-end Toolkit
 .fm ::selection {
   color: white;
   background: #00B1E7; }
+
+.fm h2, .fm .h2 {
+  margin-bottom: 16px; }
 
 .fm .banner {
   padding: .5em 0; }
@@ -7497,17 +7500,12 @@ Variables - Co-op Front-end Toolkit
     height: 0;
     overflow: hidden;
     position: relative;
-    padding-bottom: 56.25%;
-    background-color: #00B1E7; }
+    padding-bottom: 56.25%; }
     .fm .card .image img {
       position: absolute;
-      opacity: 1;
-      transition: opacity .25s linear;
       width: 100%;
       left: 0;
       top: 0; }
-      .fm .card .image img:hover {
-        opacity: 0.5; }
   .fm .card .border-bottom {
     padding-top: 2px;
     border-bottom: 1px solid #282828;
@@ -7553,14 +7551,15 @@ Variables - Co-op Front-end Toolkit
 
 @media (max-width: 479px) {
   .fm .collapse-small .card h3, .fm .collapse-small .card .h3, .fm .collapse-small .card h4, .fm .collapse-small .card .h4 {
-    margin: 0; } }
+    margin: -32px 16px 0 0; } }
 
 @media (max-width: 749px) {
   .fm .collapse-small .card h3, .fm .collapse-small .card .h3, .fm .collapse-small .card h4, .fm .collapse-small .card .h4 {
-    padding: 8px 16px; } }
+    padding: 8px 16px 0 16px; } }
 
 .fm .collapse-small .card h4 + h3, .fm .collapse-small .card .h4 + h3, .fm .collapse-small .card .h4 + .h3, .fm .collapse-small .card .h4 + h3 {
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 8px; }
 
 .fm .collapse-small .card h3 + p, .fm .collapse-small .card .h3 + p {
   padding: 8px 16px 8px; }
@@ -7624,7 +7623,8 @@ Variables - Co-op Front-end Toolkit
   display: block;
   color: #282828;
   border-bottom: 1px solid #72DCDB;
-  padding-bottom: 2px; }
+  padding-bottom: 2px;
+  background-color: white; }
   .fm .card-underline h3, .fm .card-underline .h3 {
     padding: 0;
     font-size: 20px; }
@@ -7637,7 +7637,8 @@ Variables - Co-op Front-end Toolkit
     margin: 0 0 20px; }
   .fm .card-underline:active, .fm .card-underline:focus, .fm .card-underline:hover {
     padding-bottom: 0;
-    border-bottom-width: 3px; }
+    border-bottom-width: 3px;
+    background-color: white; }
 
 @media (min-width: 960px) {
   .fm .column.medium-6 .card-underline {
