@@ -7430,17 +7430,22 @@ Variables - Co-op Front-end Toolkit
   width: 91px;
   height: 41px;
   color: #6e6e6e;
-  box-shadow: none;
-  border: 1px solid #6e6e6e;
-  border-radius: 5px; }
+  background-color: white;
+  margin: 5px 10px;
+  border: none;
+  box-shadow: 0 0 0 1px #6e6e6e;
+  transition: background-color .25s linear;
+  transition: all 0.25s; }
   @media (min-width: 750px) {
     .fm .button-white {
       font-size: 16px; } }
   .fm .button-white:active, .fm .button-white:hover {
     background: none;
     box-shadow: none;
-    border: 2px solid #6e6e6e;
-    outline: none; }
+    box-shadow: 0 0 0 2px #6e6e6e;
+    outline: none;
+    color: #282828;
+    background-color: #F2F2F2; }
   .fm .button-white:focus {
     transition: none;
     background: #ffffff; }

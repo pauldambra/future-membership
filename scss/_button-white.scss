@@ -3,9 +3,17 @@
   width:91px;
   height:41px;
   color:$coop-grey;
-  box-shadow:none;
-  border:1px solid $coop-grey;
-  border-radius:5px;
+  background-color: white;
+
+  margin: 5px 10px;
+  border: none;
+  box-shadow: 0 0 0 1px $coop-grey;
+
+  -webkit-transition: background-color .25s linear;
+  -moz-transition: background-color .25s linear;
+  -o-transition: background-color .25s linear;
+  -ms-transition: background-color .25s linear;
+  transition: background-color .25s linear;
 
   @include media(medium){
     font-size:16px;
@@ -14,9 +22,13 @@
   &:active, &:hover{
     background:none;
     box-shadow:none;
-    border:2px solid $coop-grey;
+    box-shadow: 0 0 0 2px $coop-grey;
     outline:none;
+    color:$coop-black;
+    background-color: $cloudy;
   }
+
+  transition: all 0.25s;
 
   &:focus{
     transition:none;
