@@ -1,0 +1,48 @@
+// .button-white{
+//   @include reset-margins;
+//   width:91px;
+//   height:41px;
+//   color:$coop-grey;
+//   box-shadow:none;
+//   border:1px solid $coop-grey;
+//   border-radius:5px;
+//
+//   @include media(medium){
+//     font-size:16px;
+//   }
+//
+//   &:active, &:hover{
+//     background:none;
+//     box-shadow:none;
+//     border:2px solid $coop-grey;
+//     outline:none;
+//   }
+//
+//   &:focus{
+//     transition:none;
+//     background:$white;
+//   }
+//
+// }
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #108042;
+
+  &:active, &:hover{
+      background:none;
+      box-shadow:none;
+      border:2px solid $coop-grey;
+      outline:none;
+    }
+  }
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #149865;
+  color: #ffffff; }
+
+.btn-primary:disabled:hover, .btn-primary:disabled:focus, .btn-primary.disabled:hover, .btn-primary.disabled:focus {
+  background-color: #118156; }
+
+.btn-primary.btn-loading:after {
+  border-color: #ffffff; }
