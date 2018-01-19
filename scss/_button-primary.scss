@@ -26,8 +26,12 @@
 // }
 
 .btn-primary {
+  @include reset-margins;
+  width:91px;
+  height:41px;
   color: #ffffff;
   background-color: #108042;
+  border-radius:8px;
 
   &:active, &:hover{
       background:none;
