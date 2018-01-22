@@ -7423,7 +7423,7 @@ Variables - Co-op Front-end Toolkit
   color: #6e6e6e;
   box-shadow: none;
   border: 1px solid #6e6e6e;
-  border-radius: 5px; }
+  border-radius: 10px; }
   @media (min-width: 750px) {
     .fm .button-white {
       font-size: 16px; } }
