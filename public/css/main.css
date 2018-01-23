@@ -7340,6 +7340,9 @@ Variables - Co-op Front-end Toolkit
 .fm .bg-lighter-turquoise {
   background-color: #e3f8f8; }
 
+.fm .bg-orange {
+  background-color: #F8642C; }
+
 .fm .hidden-small {
   display: none; }
   @media (min-width: 750px) {
@@ -7406,35 +7409,46 @@ Variables - Co-op Front-end Toolkit
   margin-bottom: 16px; }
 
 .fm .banner {
-  padding: .5em 0; }
+  padding: 16px 0;
+  overflow: hidden; }
   .fm .banner p {
-    font-size: 16px;
-    padding: 0 .5em;
-    margin: 0; }
+    font-size: 16px; }
     @media (min-width: 750px) {
       .fm .banner p {
         padding: 0 1em; } }
+  .fm .banner p, .fm .banner h2 {
+    margin: 0; }
+  .fm .banner .column {
+    padding: 0 16px; }
+    @media (min-width: 1300px) {
+      .fm .banner .column {
+        padding: 0 16px; } }
+    .fm .banner .column button {
+      margin: 16px 0 0 0; }
+      @media (min-width: 960px) {
+        .fm .banner .column button {
+          margin: 0; } }
 
 .fm .button-white {
   margin: 0;
   padding: 0;
   width: 91px;
   height: 41px;
-  color: #6e6e6e;
+  color: #282828;
   box-shadow: none;
-  border: 1px solid #6e6e6e;
-  border-radius: 10px; }
+  border: 1px solid #282828;
+  border-radius: 10px;
+  background: none; }
   @media (min-width: 750px) {
     .fm .button-white {
       font-size: 16px; } }
   .fm .button-white:active, .fm .button-white:hover {
     background: none;
     box-shadow: none;
-    border: 2px solid #6e6e6e;
+    border: 2px solid #282828;
     outline: none; }
   .fm .button-white:focus {
-    transition: none;
-    background: #ffffff; }
+    transition: none; }
 
 .fm .card {
   display: block;
@@ -7639,7 +7653,7 @@ Variables - Co-op Front-end Toolkit
     padding: 0 16px; }
     @media (min-width: 960px) {
       .fm .header .column {
-        padding: 0; } }
+        padding: 16px 16px 0 16px; } }
     @media (min-width: 1300px) {
       .fm .header .column {
         padding: 0 16px; } }

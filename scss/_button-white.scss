@@ -2,10 +2,11 @@
   @include reset-margins;
   width:91px;
   height:41px;
-  color:$coop-grey;
+  color:$black;
   box-shadow:none;
-  border:1px solid $coop-grey;
+  border:1px solid $black;
   border-radius:10px;
+  background: none;
 
   @include media(medium){
     font-size:16px;
@@ -14,13 +15,12 @@
   &:active, &:hover{
     background:none;
     box-shadow:none;
-    border:2px solid $coop-grey;
+    border:2px solid $black;
     outline:none;
   }
 
   &:focus{
     transition:none;
-    background:$white;
   }
 
 }

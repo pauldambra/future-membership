@@ -3,11 +3,9 @@
   text-align:right;
 }
 
-// text helpers
 .align-center{
   text-align:center;
 }
-
 
 .block{
   display:block;
@@ -54,6 +52,10 @@ a.mid-green, a.dark-green{
 
 .bg-lighter-turquoise{
   background-color:$lighter-turquoise;
+}
+
+.bg-orange{
+  background-color:$mid-orange;
 }
 
 .hidden-small{

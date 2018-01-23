@@ -1,13 +1,33 @@
 .banner{
-  padding:.5em 0;
+  padding: 16px 0;
+  overflow: hidden;
 
   p{
     font-size:16px;
-    padding:0 .5em;
-    margin:0;
 
     @include media(medium){
       padding:0 1em;
+    }
+  }
+
+  p, h2{
+    // padding:0 .5em;
+    margin:0;
+  }
+
+  .column{
+    padding:0 $quarter-spacing-unit;
+
+    @include media(xlarge){
+      padding:0 16px;
+    }
+
+    button {
+      margin:$quarter-spacing-unit 0 0 0;
+
+      @include media(large){
+        margin:0;
+      }
     }
   }
 }
