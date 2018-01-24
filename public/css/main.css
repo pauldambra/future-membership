@@ -7346,6 +7346,9 @@ Variables - Co-op Front-end Toolkit
 .fm .bg-yellow {
   background-color: #FFEC00; }
 
+.fm .bg-green {
+  background-color: #BAD303; }
+
 .fm .hidden-small {
   display: none; }
   @media (min-width: 750px) {
