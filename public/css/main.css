@@ -7957,6 +7957,16 @@ Helpers mixins - Co-op Front-end Toolkit
       padding-top: 0;
       border-bottom: 3px solid #282828; }
 
+.fm .card--compact h3 {
+  margin-bottom: 0; }
+
+.fm .card--compact .border-bottom {
+  padding-top: 0;
+  margin-bottom: 2px; }
+
+.fm .card--compact:hover .border-bottom {
+  margin-bottom: 0; }
+
 .fm .card .row h3 {
   padding-left: 16px;
   padding-right: 16px; }
