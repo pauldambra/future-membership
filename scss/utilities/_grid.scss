@@ -97,6 +97,15 @@
   }
 }
 
+// negative margins
+.margin-negative-tm {
+  margin-top: -$base-spacing-unit;
+}
+
+.margin-negative-tl {
+  margin-top: - ($base-spacing-unit * 2);
+}
+
 // responsive margins
 .margin-bs{
   margin-bottom:$quarter-spacing-unit;
@@ -128,6 +137,15 @@
   @include media(large){
     margin-bottom:$base-spacing-unit;
   }
+}
+
+.margin-tb { 
+  margin-top: $quarter-spacing-unit;
+
+  @include media(medium){
+    margin-top: $base-spacing-unit;
+  }
+
 }
 
 // Padding helpers

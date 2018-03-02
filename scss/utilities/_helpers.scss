@@ -66,6 +66,11 @@ a.mid-green, a.dark-green{
   background-color:$light-green;
 }
 
+.bg-dotted {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=);
+  background-size: 3px;
+}
+
 .hidden-small{
   display:none;
 
