@@ -4,10 +4,6 @@
 
   p{
     font-size:16px;
-
-    @include media(medium){
-      padding:0 1em;
-    }
   }
 
   p, h2{
@@ -24,10 +20,6 @@
 
     button {
       margin:$quarter-spacing-unit 0 0 0;
-
-      @include media(large){
-        margin:0;
-      }
     }
   }
 }
