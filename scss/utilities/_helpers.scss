@@ -66,6 +66,10 @@ a.mid-green, a.dark-green{
   background-color:$light-green;
 }
 
+.bg-grey{
+  background-color:$cloudy;
+}
+
 .bg-dotted {
   position: relative;
   &:before {
