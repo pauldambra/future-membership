@@ -7912,6 +7912,8 @@ Helpers mixins - Co-op Front-end Toolkit
     margin-bottom: 16px; }
     .fm .card-banner__text h3 a {
       text-decoration: none; }
+      .fm .card-banner__text h3 a:hover {
+        color: #282828; }
     @media (min-width: 960px) {
       .fm .card-banner__text h3:before {
         content: "";

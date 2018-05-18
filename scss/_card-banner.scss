@@ -61,6 +61,9 @@
      margin-bottom: $quarter-spacing-unit;
      a {
       text-decoration: none;
+      &:hover {
+        color: $text;
+      } 
      }
     @include media(large) {
       &:before {
