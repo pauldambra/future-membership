@@ -1,9 +1,13 @@
 .card-banner {
   display: block;
   color: $text;
+  margin-bottom: 16px;
+  @include media(medium) {
+    margin-bottom: 32px
+  }
 }
 
-.card-banner .bg-dotted {
+.bg-dotted--banner{
    padding-bottom: $quarter-spacing-unit;
   @include media(medium) {
     padding: 0 $quarter-spacing-unit $quarter-spacing-unit $quarter-spacing-unit;
@@ -42,7 +46,7 @@
     border: none;
   }
   p {
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
     @include media(xlarge) {
       margin-top: -89px;
@@ -63,7 +67,7 @@
       text-decoration: none;
       &:hover {
         color: $text;
-      } 
+      }
      }
     @include media(large) {
       &:before {
@@ -86,11 +90,50 @@
      }
    }
   }
+
   p {
     margin-bottom: $quarter-spacing-unit;
      @include media(large) {
       padding-right: $half-spacing-unit;
      }
+    &.margin-btm {
+      margin-bottom: 48px;
+    }
+    a {
+      color: #282828;
+      border-color: #282828;
+      &.card-banner__button {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.card-banner__button {
+  position: relative;
+  padding: 16px 40px 16px 8px;
+  width: 90%;
+  background-color: #108042;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 0;
+
+  span.icon svg {
+    width: 20px;
+    position: absolute;
+    top: 24px;
+    right: 20px
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @include media(medium) {
+    max-width: 320px;
+    position: absolute;
+    bottom: -10%;
+    left: 16px;
   }
 }
 
