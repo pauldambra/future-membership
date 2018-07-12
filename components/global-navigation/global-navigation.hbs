@@ -1,0 +1,99 @@
+<header class="coop-header">
+
+	<div class="row">
+
+		<div class="column">
+    
+		    <nav class="coop-nav">
+
+		     {{>@logo}}
+		        
+			    <a class="coop-nav__toplink coop-nav__trigger">Menu <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l7 7 7-7" stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
+			        	
+			    <ul class="coop-nav__list">
+			        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Shop</a>
+			        	<ul class="coop-nav__leveltwo">
+			        	    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Electrical</a>
+								<ul class="coop-nav__levelthree">
+								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Washers and dryers</a></li>
+								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Dishwashers</a></li>
+								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Fridge and freezers</a></li>
+								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Cookers and hobs</a></li>
+								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Small appliances</a></li>
+								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Vacuums</a></li>
+								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">TV and audio</a></li>
+								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Computers and gaming</a></li>
+								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Electrical offers</a></li>
+								</ul>
+			        	    </li>
+			        	    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Beds</a>
+								<ul class="coop-nav__levelthree">
+    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Beds</a></li>
+    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Mattresses</a></li>
+    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Frames</a></li>
+    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Headboards</a></li>
+    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Bedding</a></li>
+    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Cots and kids beds</a></li>
+								</ul>
+  							</li>
+			        	    <li class="coop-nav__item menu-inline"><a href="#" class="coop-nav__link">Find a food store</a></li>
+			        	    <li class="coop-nav__item menu-inline"><a href="#" class="coop-nav__link">Arrange a food delivery</a></li>
+			        	    <li class="coop-nav__item mega-content">
+			        	    	    <img src="/images/reviews.png" alt="reviews">
+    								<p>Co-op Members get 5% back on selected electricals and discounts on beds.</p>
+									<p>Free delivery on small appliances and TVs under 40”.</p>
+									<p>Enter code SUN20 to get an additional £20 off electricals  over £250.</p></li>
+			        	</ul>
+			        </li>
+			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Get food ideas</a></li>
+			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Arrange a funeral</a></li>
+			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Buy insurance</a></li>
+			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Get legal help</a></li>
+			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Deals and offers</a></li>
+			    </ul>
+
+			    <a class="coop-nav__toplink coop-nav__finder">Find a store</a>
+
+		        <button class="coop-nav__signin">Sign in</button>
+
+		    </nav>
+
+        </div>
+
+	</div>
+
+</header>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+if ( $(window).width() < 960) {   
+
+function classToggle() {
+  const navs = document.querySelectorAll('.coop-nav__list')
+  navs.forEach(nav => nav.classList.toggle('toggle-show'));
+}
+document.querySelector('.coop-nav__trigger' )
+  .addEventListener('click', classToggle);
+
+function levelTwoToggle() {
+  const navs = document.querySelectorAll('.coop-nav__leveltwo')
+  navs.forEach(nav => nav.classList.toggle('toggle-show'));
+}
+document.querySelector('.coop-nav__link' )
+  .addEventListener('click', levelTwoToggle);
+
+
+function levelThreeToggle() {
+  const navs = document.querySelectorAll('.coop-nav__levelthree')
+  navs.forEach(nav => nav.classList.toggle('toggle-show'));
+}
+document.querySelector('.coop-nav__link' )
+  .addEventListener('click', levelThreeToggle);
+} 
+
+</script>
+
+
+

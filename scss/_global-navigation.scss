@@ -1,0 +1,186 @@
+
+.coop-header {
+	padding: 24px 0;
+}
+
+.coop-logo {
+	padding: 0 24px;
+}
+
+.coop-nav {
+	display: flex;
+	font-family: $medium;
+
+	&__toplink {
+		text-decoration: none;
+		  	&:hover {
+		  	   color: #282828 ;
+			   text-decoration: underline;
+		}
+	}
+
+    &__trigger {
+    	margin-left: 23px;
+    	margin-right: $half-spacing-unit;	
+
+    	@include media(large){
+      		display: none;
+    	}
+	}
+	  
+    &__finder {
+    	margin-right: 38px;
+
+    	@include media(large){
+      		display: none;
+    	}
+    }
+
+	&__signin {
+	  	border: #166D66 2px solid;
+	  	border-radius: 0;
+	  	height: 47px;
+	  	width: 84px;
+	  	box-shadow: none;
+	  	padding: $eighth-spacing-unit;
+	  	color: #166D66;
+	  	font-size: 16px;
+		  	&:hover {
+		  		text-decoration: underline;
+		  		background-color: $white;
+		  	}
+		  	@include media(large){
+		  	   height: 41px;
+	  		   width: 85px;
+		  	}
+	}
+
+	&__list {
+	  	display: none;
+	  	position: absolute;
+	  	margin-top: 53px;
+	  	width: 100%;
+	  	padding-right: 24px;
+	  	padding-left: 24px;
+	  	list-style: none;
+
+		  	@include media(large){
+	      		display: flex;	 
+	      		position: relative; 
+	      		margin-top: 0;  	
+	      	} 
+
+	      	&.toggle-show {
+	      		display: block;
+	      	}
+
+    }
+
+    &__item {
+    	@include media(large){
+    		padding-right: 19px;
+    	}
+    	@include media(xlarge){
+    		padding-right: 100px;
+    	}
+    }
+
+    &__levelone  {
+
+    	&:active, &:focus {
+    	background-color: #356DB5;
+    	border: 0;
+    	outline: 0;
+    	color: $white;
+    	}
+
+    	@include media(large){
+    		&:hover {
+    			border-bottom: 10px solid #326BB7;
+    		}
+    	}
+    }
+
+    &__leveltwo {
+    	display: none;
+    	padding-left: 0;
+    	list-style: none;
+    		
+	      	&.toggle-show {
+	      		display: block;
+	      	}
+
+	        @include media(large) {
+	        	position: absolute;
+	        	display: flex;
+	        	background-color: #F7F7F7;
+	        	width: 100%;
+	        	border-top: 2px solid #356DB5;
+	        	border-bottom: 8px solid #356DB5;
+	        }
+    }
+
+    &__levelthree{
+    	display: none;
+    	padding-left: 0;
+    	list-style: none;
+
+    		&.toggle-show {
+	      		display: block;
+	      	}
+	      	@include media(large) {
+	      		display: block;
+	      	}
+    }
+
+
+    &__link {
+    	display: block;
+    	width: 100%;
+    	padding: 24px 0;
+    	text-decoration: none;
+    	font-size: 16px;
+    	border-bottom: #A5A5A5 1px solid;
+
+    		&.active {
+	      		background: red;
+	      	}
+
+	      	@include media(large){
+      			border-bottom: 0;
+      			padding: $eighth-spacing-unit 0;
+      		
+	      		&.hover {
+		      		background: red;
+		      	}
+
+    		}
+
+    }
+
+    &.toggle-show {
+    	@include media(large){
+    		display: none;
+    	}
+    }
+
+    .menu-inline {
+    	@include media(large){
+    		display: inline-block;
+    	}
+    }
+
+    .mega-content {
+    	display: none;
+
+    	p {
+    		font-size: 16px;
+    	}
+
+    	@include media(large){
+    		display: block;
+    	}
+
+    }
+
+}
