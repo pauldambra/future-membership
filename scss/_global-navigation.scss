@@ -1,10 +1,15 @@
 
-.coop-header {
-	padding: 24px 0;
-}
-
 .coop-logo {
-	padding: 0 24px;
+    margin-top: 10px;
+    margin-left: 24px;
+    img {
+        width: 26px;
+        height: 28px;
+        @include media(large) {
+            width: 54px;
+            height: 56px;
+      }
+    }
 }
 
 .coop-nav {
@@ -12,6 +17,7 @@
 	font-family: $medium;
 
 	&__toplink {
+        margin-top: 10px;
 		text-decoration: none;
 		  	&:hover {
 		  	   color: #282828 ;
@@ -42,16 +48,19 @@
 	  	height: 47px;
 	  	width: 84px;
 	  	box-shadow: none;
-	  	padding: $eighth-spacing-unit;
 	  	color: #166D66;
 	  	font-size: 16px;
 		  	&:hover {
 		  		text-decoration: underline;
 		  		background-color: $white;
 		  	}
-		  	@include media(large){
+		  	@include media(large) {
+               margin-top: 16px;  
+               margin-right: 24px;
 		  	   height: 41px;
 	  		   width: 85px;
+               border-radius: 7px;
+               font-size: 16px;
 		  	}
 	}
 
@@ -67,7 +76,8 @@
 		  	@include media(large){
 	      		display: flex;	 
 	      		position: relative; 
-	      		margin-top: 0;  	
+	      		margin-top: 70px; 
+                padding-right: 0; 	
 	      	} 
 
 	      	&.toggle-show {
@@ -80,12 +90,13 @@
     	@include media(large){
     		padding-right: 19px;
     	}
-    	@include media(xlarge){
-    		padding-right: 100px;
+
+    	@include media(xlarge) {
+    		padding-right: 65px;
     	}
     }
 
-    &__levelone  {
+    &__levelone {
 
     	&:active, &:focus {
     	background-color: #356DB5;
@@ -120,7 +131,7 @@
 	        }
     }
 
-    &__levelthree{
+    &__levelthree {
     	display: none;
     	padding-left: 0;
     	list-style: none;
@@ -133,6 +144,22 @@
 	      	}
     }
 
+    &__member {
+        background-color: #0F8482;
+        color: $white;
+        border: 0;
+        font-size: 16px;
+        width: 100%;
+        padding: 24px 0;
+        @include media(large) {
+            margin-top: -54px;
+            width: 232px;
+            height: 41px;
+            padding: 0;
+            border-radius: 7px;
+        }
+    } 
+
 
     &__link {
     	display: block;
@@ -142,18 +169,9 @@
     	font-size: 16px;
     	border-bottom: #A5A5A5 1px solid;
 
-    		&.active {
-	      		background: red;
-	      	}
-
 	      	@include media(large){
       			border-bottom: 0;
       			padding: $eighth-spacing-unit 0;
-      		
-	      		&.hover {
-		      		background: red;
-		      	}
-
     		}
 
     }

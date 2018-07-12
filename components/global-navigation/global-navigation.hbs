@@ -18,6 +18,7 @@
 			        	<!-- Subcontent level 2 -->   
 			        	<ul class="coop-nav__leveltwo">
 			        	    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Electrical</a>
+								
 								<ul class="coop-nav__levelthree">
 								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Washers and dryers</a></li>
 								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Dishwashers</a></li>
@@ -29,6 +30,7 @@
 								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Computers and gaming</a></li>
 								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Electrical offers</a></li>
 								</ul>
+
 			        	    </li>
 
 			        	    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Beds</a>
@@ -51,10 +53,11 @@
 
 			        	    <!-- Desktop menu content --> 
 			        	    <li class="coop-nav__item mega-content">
-			        	    	    <img src="/images/reviews.png" alt="reviews">
-    								<p>Co-op Members get 5% back on selected electricals and discounts on beds.</p>
+			        	    	 <img src="/images/reviews.png" alt="reviews">
+    							    <p>Co-op Members get 5% back on selected electricals and discounts on beds.</p>
 									<p>Free delivery on small appliances and TVs under 40”.</p>
-									<p>Enter code SUN20 to get an additional £20 off electricals  over £250.</p></li>
+									<p>Enter code SUN20 to get an additional £20 off electricals  over £250.</p>
+							</li>
 			        	</ul>
 			        </li>
 
@@ -63,7 +66,9 @@
 			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Buy insurance</a></li>
 			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Get legal help</a></li>
 			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Deals and offers</a></li>
-			    
+			       
+			        <!-- Member button --> 
+			   	   <button class="coop-nav__member">Become a Co-op Member</button>
 			    </ul>
 
 			    <!-- Find a store link --> 
@@ -108,6 +113,18 @@ function levelThreeToggle() {
 document.querySelector('.coop-nav__link' )
   .addEventListener('click', levelThreeToggle);
 } 
+
+</script>
+
+<script>
+	 $(function(){
+      $('.coop-nav__trigger').click(function(e) {
+      e.preventDefault();
+      $('.coop-nav__trigger').removeClass('active');
+      $(this).addClass('active');
+  });                                  
+});
+
 
 </script>
 
