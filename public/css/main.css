@@ -8040,9 +8040,20 @@ Helpers mixins - Co-op Front-end Toolkit
 .fm h2, .fm .h2 {
   margin-bottom: 16px; }
 
+.fm .coop-header {
+  border-bottom: 1px solid #d8d8d8; }
+  @media (min-width: 960px) {
+    .fm .coop-header {
+      height: 122px;
+      box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+      border: 0; } }
+
 .fm .coop-logo, .fm .coop-logo-large {
   margin-top: 10px;
   margin-left: 24px; }
+  @media (min-width: 960px) {
+    .fm .coop-logo, .fm .coop-logo-large {
+      margin-left: 0; } }
   .fm .coop-logo img, .fm .coop-logo-large img {
     width: 26px;
     height: 28px;
@@ -8058,6 +8069,9 @@ Helpers mixins - Co-op Front-end Toolkit
   -ms-flex-pack: justify;
       justify-content: space-between;
   font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  @media (min-width: 960px) {
+    .fm .coop-nav {
+      display: block; } }
   .fm .coop-nav__toplink {
     margin-top: 10px;
     text-decoration: none; }
@@ -8105,8 +8119,9 @@ Helpers mixins - Co-op Front-end Toolkit
       background-color: #FFFFFF; }
     @media (min-width: 960px) {
       .fm .coop-nav__signin {
-        margin-top: 16px;
-        margin-right: 24px;
+        position: absolute;
+        top: 5px;
+        right: 10px;
         height: 41px;
         width: 85px;
         border-radius: 7px;
@@ -8123,18 +8138,25 @@ Helpers mixins - Co-op Front-end Toolkit
       .fm .coop-nav__list {
         display: -ms-flexbox;
         display: flex;
-        margin-top: 70px;
+        position: relative;
+        margin-top: 30px;
         padding-right: 0; } }
     .fm .coop-nav__list.toggle-show {
       display: block; }
+      @media (min-width: 960px) {
+        .fm .coop-nav__list.toggle-show {
+          display: -ms-flexbox;
+          display: flex; } }
   .fm .coop-nav__item {
     margin-left: 24px; }
     @media (min-width: 960px) {
       .fm .coop-nav__item {
-        padding-right: 19px; } }
+        padding-right: 0;
+        margin-left: 0; } }
     @media (min-width: 1300px) {
       .fm .coop-nav__item {
-        padding-right: 32px; } }
+        padding-right: 0;
+        margin-left: 24px; } }
   .fm .coop-nav__levelone {
     outline: 0; }
     .fm .coop-nav__levelone.active {
@@ -8145,7 +8167,10 @@ Helpers mixins - Co-op Front-end Toolkit
       color: #FFFFFF; }
     @media (min-width: 960px) {
       .fm .coop-nav__levelone:hover {
-        border-bottom: 10px solid #326BB7; } }
+        border-bottom: 10px solid #326BB7; }
+      .fm .coop-nav__levelone:hover + .coop-nav__leveltwo {
+        display: -ms-flexbox;
+        display: flex; } }
   .fm .coop-nav__leveltwo {
     display: none;
     margin-bottom: 0;
@@ -8154,23 +8179,34 @@ Helpers mixins - Co-op Front-end Toolkit
     list-style: none; }
     .fm .coop-nav__leveltwo.toggle-show {
       display: block; }
+      @media (min-width: 960px) {
+        .fm .coop-nav__leveltwo.toggle-show {
+          display: -ms-flexbox;
+          display: flex; } }
     @media (min-width: 960px) {
       .fm .coop-nav__leveltwo {
         position: absolute;
-        display: -ms-flexbox;
-        display: flex;
         background-color: #F7F7F7;
         width: 100%;
         border-top: 2px solid #356DB5;
-        border-bottom: 8px solid #356DB5; } }
+        border-bottom: 8px solid #356DB5;
+        left: 0; } }
     .fm .coop-nav__leveltwo .coop-nav__link {
       padding-left: 24px; }
+    @media (min-width: 960px) {
+      .fm .coop-nav__leveltwo:hover {
+        display: -ms-flexbox;
+        display: flex; } }
   .fm .coop-nav__levelthree {
     display: none;
     padding-left: 0;
     list-style: none; }
     .fm .coop-nav__levelthree.toggle-show {
       display: block; }
+      @media (min-width: 960px) {
+        .fm .coop-nav__levelthree.toggle-show {
+          display: -ms-flexbox;
+          display: flex; } }
     @media (min-width: 960px) {
       .fm .coop-nav__levelthree {
         display: block; } }
@@ -8188,8 +8224,8 @@ Helpers mixins - Co-op Front-end Toolkit
     @media (min-width: 960px) {
       .fm .coop-nav__member {
         position: absolute;
-        margin-top: -54px;
-        right: 157px;
+        margin-top: -61px;
+        right: 100px;
         width: 232px;
         height: 41px;
         min-width: 232px;
@@ -8209,8 +8245,11 @@ Helpers mixins - Co-op Front-end Toolkit
     @media (min-width: 960px) {
       .fm .coop-nav__link {
         border-bottom: 0;
-        padding: 8px 0;
+        padding: 8px 20px;
         background-color: transparent; } }
+    @media (min-width: 1300px) {
+      .fm .coop-nav__link {
+        padding-right: 32px; } }
     .fm .coop-nav__link svg {
       margin-top: 10px;
       margin-right: 10px; }
@@ -8228,6 +8267,9 @@ Helpers mixins - Co-op Front-end Toolkit
       display: none; }
     .fm .coop-nav__link.active .open-chevron {
       display: inline-block; }
+      @media (min-width: 960px) {
+        .fm .coop-nav__link.active .open-chevron {
+          display: none; } }
   @media (min-width: 960px) {
     .fm .coop-nav.toggle-show {
       display: none; } }

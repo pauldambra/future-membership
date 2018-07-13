@@ -1,22 +1,58 @@
+.coop-header {
+    //border: red 1px solid;
+}
+
+.coop-nav {
+    //border: green 1px solid; 
+}
+
+.coop-nav__list {
+     //border: blue 1px solid;
+}
+
+.coop-nav__list {
+     //border: blue 1px solid;
+}
+
+.coop-header {
+    border-bottom: 1px solid #d8d8d8;
+
+    @include media(large) {
+        height: 122px;
+        box-shadow: 0 2px 1px 0 rgba(0,0,0,0.20);
+        border: 0;
+    }
+}
 
 .coop-logo {
     margin-top: 10px;
     margin-left: 24px;
+
+    @include media(large) {
+        margin-left: 0;
+    }
+
     img {
         width: 26px;
         height: 28px;
         min-width: 26px;
+
         @include media(large) {
             width: 54px;
             height: 56px;
       }
     }
+
 }
 
 .coop-nav {
 	display: flex;
     justify-content: space-between;
 	font-family: $medium;
+
+    @include media(large){
+        display: block;
+    }
 
 	&__toplink {
         margin-top: 10px;
@@ -86,8 +122,9 @@
 		  	}
 
 		  	@include media(large) {
-               margin-top: 16px;  
-               margin-right: 24px;
+               position: absolute;
+               top: 5px;  
+               right: 10px;
 		  	   height: 41px;
 	  		   width: 85px;
                border-radius: 7px;
@@ -106,12 +143,17 @@
 
 		  	@include media(large){
 	      		display: flex;	 
-	      		margin-top: 70px; 
+                position: relative;
+	      		margin-top: 30px; 
                 padding-right: 0; 	
 	      	} 
 
 	      	&.toggle-show {
 	      		display: block;
+
+                @include media(large) {
+                    display: flex;
+                }
 	      	}
     }
 
@@ -119,11 +161,13 @@
         margin-left: 24px;
 
     	@include media(large){
-    		padding-right: 19px;
+    		padding-right: 0;
+            margin-left: 0;
     	}
 
     	@include media(xlarge) {
-    		padding-right: $half-spacing-unit;
+    		padding-right: 0;
+            margin-left: 24px;
     	}
     }
 
@@ -143,6 +187,10 @@
     		&:hover {
     			border-bottom: 10px solid #326BB7;
     		}
+
+            &:hover + .coop-nav__leveltwo {
+               display: flex;
+            }
     	}
     }
 
@@ -155,20 +203,32 @@
     		
 	      	&.toggle-show {
 	      		display: block;
+
+                @include media(large) {
+                    display: flex;
+                }
 	      	}
 
 	        @include media(large) {
 	        	position: absolute;
-	        	display: flex;
 	        	background-color: #F7F7F7;
 	        	width: 100%;
 	        	border-top: 2px solid #356DB5;
 	        	border-bottom: 8px solid #356DB5;
+                left: 0;
+
 	        }
 
             .coop-nav__link {
                 padding-left: 24px;
             }
+
+            @include media(large) {
+                &:hover {
+                    display: flex;
+                }
+            }
+
     }
 
     &__levelthree {
@@ -178,7 +238,12 @@
 
     		&.toggle-show {
 	      		display: block;
+
+                @include media(large) {
+                    display: flex;
+                }
 	      	}
+
 	      	@include media(large) {
 	      		display: block;
 	      	}
@@ -200,8 +265,8 @@
 
         @include media(large) {
             position: absolute;
-            margin-top: -54px;
-            right: 157px;
+            margin-top: -61px;
+            right: 100px;
             width: 232px;
             height: 41px;
             min-width: 232px;
@@ -223,9 +288,13 @@
 
 	      	@include media(large){
       			border-bottom: 0;
-      			padding: $eighth-spacing-unit 0;
+      			padding: $eighth-spacing-unit 20px;
                 background-color: transparent;
     		}
+
+            @include media(xlarge) {
+                padding-right: $half-spacing-unit;
+            }
 
             svg {
                 margin-top: 10px;
@@ -235,7 +304,7 @@
             .chevron {
                 display: inline-block;
 
-                    @include media(large){
+                    @include media(large) {
                         display: none;
                     }
             }
@@ -243,7 +312,7 @@
             .open-chevron {
                 display: none;
 
-                    @include media(large){
+                    @include media(large) {
                         display: none;
                     }
             }
@@ -256,12 +325,17 @@
 
                  .open-chevron {
                     display: inline-block;
+
+                       @include media(large) {
+                          display: none;
+                       }
                  }
             }
 
     }
 
     &.toggle-show {
+        
     	@include media(large){
     		display: none;
     	}

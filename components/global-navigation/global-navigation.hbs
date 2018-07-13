@@ -1,90 +1,37 @@
+
 <header class="coop-header">
 
-	<div class="row">
+	<div class="wrap">
+	    
+			    <nav class="coop-nav">
 
-		<div class="column">
-    
-		    <nav class="coop-nav">
+			     {{>@logo}}
+			        
+				    <a class="coop-nav__toplink coop-nav__trigger">Menu <svg width="16" height="10" class="open-menu" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l7 7 7-7" stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"/></svg><svg width="12" height="12" class="close-menu" xmlns="http://www.w3.org/2000/svg"><g stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M1 1l10.012 10.012M11 1L1 11"/></g></svg></a>
+				    
+				    <!-- Navbar -->   	
+				    <ul class="coop-nav__list">
 
-		     {{>@logo}}
-		        
-			    <a class="coop-nav__toplink coop-nav__trigger">Menu <svg width="16" height="10" class="open-menu" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l7 7 7-7" stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"/></svg><svg width="12" height="12" class="close-menu" xmlns="http://www.w3.org/2000/svg"><g stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M1 1l10.012 10.012M11 1L1 11"/></g></svg></a>
-			    
-			    <!-- Navbar -->   	
-			    <ul class="coop-nav__list">
+ 					  {{>@shop}}
 
-			        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Shop
+ 					  {{>@food-ideas}}
 
-			        <svg width="10" height="16" class="chevron" xmlns="http://www.w3.org/2000/svg"><path d="M1 15l7-7-7-7" stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+				        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Arrange a funeral or plan</a></li>
+				        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Buy insurance</a></li>
+				        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Get legal help</a></li>
+				        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Deals and offers</a></li>
+				       
+				        <!-- Member button --> 
+				   	   <button class="coop-nav__member">Become a Co-op Member</button>
+				    </ul>
 
-			        <svg width="17" height="10"class="open-chevron" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 8.5l-7-7-7 7" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
-			        	
-			        	<!-- Subcontent level 2 -->   
-			        	<ul class="coop-nav__leveltwo">
-			        	    <li class="coop-nav__item"><a href="#" class="coop-nav__link levelthree-trigger">Electrical  <svg width="17" height="10"class="open-chevron" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 8.5l-7-7-7 7" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
-								
-								<ul class="coop-nav__levelthree">
-								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Washers and dryers</a></li>
-								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Dishwashers</a></li>
-								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Fridge and freezers</a></li>
-								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Cookers and hobs</a></li>
-								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Small appliances</a></li>
-								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Vacuums</a></li>
-								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">TV and audio</a></li>
-								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Computers and gaming</a></li>
-								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Electrical offers</a></li>
-								</ul>
+				    <!-- Find a store link --> 
+				    <a class="coop-nav__toplink coop-nav__finder">Find a store</a>
+					
+					<!-- Signin button --> 
+			        <button class="coop-nav__signin">Sign in</button>
 
-			        	    </li>
-
-			        	    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Beds</a>
-								
-								<!-- Subcontent level 3 -->  
-								<ul class="coop-nav__levelthree">
-    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Beds</a></li>
-    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Mattresses</a></li>
-    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Frames</a></li>
-    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Headboards</a></li>
-    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Bedding</a></li>
-    								<li class="coop-nav__item"><a href="#" class="coop-nav__link">Cots and kids beds</a></li>
-								</ul>
-
-  							</li>
-
-			        	    <li class="coop-nav__item menu-inline"><a href="#" class="coop-nav__link">Find a food store</a></li>
-
-			        	    <li class="coop-nav__item menu-inline"><a href="#" class="coop-nav__link">Arrange a food delivery</a></li>
-
-			        	    <!-- Desktop menu content --> 
-			        	    <li class="coop-nav__item mega-content">
-			        	    	 <img src="/images/reviews.png" alt="reviews">
-    							    <p>Co-op Members get 5% back on selected electricals and discounts on beds.</p>
-									<p>Free delivery on small appliances and TVs under 40”.</p>
-									<p>Enter code SUN20 to get an additional £20 off electricals  over £250.</p>
-							</li>
-			        	</ul>
-			        </li>
-
-			        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Get food ideas</a></li>
-			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Arrange a funeral or plan</a></li>
-			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Buy insurance</a></li>
-			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Get legal help</a></li>
-			        <li class="coop-nav__item"><a href="#" class="coop-nav__link">Deals and offers</a></li>
-			       
-			        <!-- Member button --> 
-			   	   <button class="coop-nav__member">Become a Co-op Member</button>
-			    </ul>
-
-			    <!-- Find a store link --> 
-			    <a class="coop-nav__toplink coop-nav__finder">Find a store</a>
-				
-				<!-- Signin button --> 
-		        <button class="coop-nav__signin">Sign in</button>
-
-		    </nav>
-
-        </div>
-
+			    </nav>
 	</div>
 
 </header>
