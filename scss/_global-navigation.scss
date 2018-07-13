@@ -31,21 +31,27 @@
     	margin-left: 23px;
     	margin-right: $half-spacing-unit;	
         min-width: 66px;
-        .open-menu {}
+
+        .open-menu {
             margin-left: 5px;
+        }
+
         .close-menu {
             margin-left: 5px;
             display: none;
         }
+
         &.active {
             border-bottom: 4px solid #326BB7;
             font-family: $bold;
+
             .open-menu {
                 display: none;
             }
-             .close-menu {
+
+            .close-menu {
                 display: inline-block;
-             }
+            }
         }
 
     	@include media(large){
@@ -73,10 +79,12 @@
 	  	box-shadow: none;
 	  	color: #166D66;
 	  	font-size: 16px;
+
 		  	&:hover {
 		  		text-decoration: underline;
 		  		background-color: $white;
 		  	}
+
 		  	@include media(large) {
                margin-top: 16px;  
                margin-right: 24px;
@@ -98,7 +106,6 @@
 
 		  	@include media(large){
 	      		display: flex;	 
-	      		position: relative; 
 	      		margin-top: 70px; 
                 padding-right: 0; 	
 	      	} 
@@ -106,7 +113,6 @@
 	      	&.toggle-show {
 	      		display: block;
 	      	}
-
     }
 
     &__item {
@@ -117,20 +123,23 @@
     	}
 
     	@include media(xlarge) {
-    		padding-right: 65px;
+    		padding-right: $half-spacing-unit;
     	}
     }
 
     &__levelone {
         outline: 0;
+
     	&.active {
         	background-color: #356DB5;
+            padding-left: 24px;
         	border: 0;
         	outline: 0;
         	color: $white;
     	}
 
-    	@include media(large){
+    	@include media(large) {
+
     		&:hover {
     			border-bottom: 10px solid #326BB7;
     		}
@@ -139,6 +148,7 @@
 
     &__leveltwo {
     	display: none;
+        margin-bottom: 0;
         background-color: #3B70B1;
     	padding-left: 0;
     	list-style: none;
@@ -155,6 +165,10 @@
 	        	border-top: 2px solid #356DB5;
 	        	border-bottom: 8px solid #356DB5;
 	        }
+
+            .coop-nav__link {
+                padding-left: 24px;
+            }
     }
 
     &__levelthree {
@@ -168,6 +182,10 @@
 	      	@include media(large) {
 	      		display: block;
 	      	}
+
+            .coop-nav__item {
+                margin-left: 0;
+            }
     }
 
     &__member {
@@ -179,10 +197,14 @@
         padding: 24px 0;
         box-shadow: none;
         border-radius: 0;
+
         @include media(large) {
+            position: absolute;
             margin-top: -54px;
+            right: 157px;
             width: 232px;
             height: 41px;
+            min-width: 232px;
             padding: 0;
             border-radius: 7px;
         }
@@ -193,7 +215,7 @@
     	display: flex;
     	width: 100%;
         background-color: $white;
-    	padding: 24px 0;
+    	padding: 24px 0  24px 0;
         justify-content: space-between;
     	text-decoration: none;
     	font-size: 16px;
@@ -202,6 +224,7 @@
 	      	@include media(large){
       			border-bottom: 0;
       			padding: $eighth-spacing-unit 0;
+                background-color: transparent;
     		}
 
             svg {
@@ -211,10 +234,18 @@
 
             .chevron {
                 display: inline-block;
+
+                    @include media(large){
+                        display: none;
+                    }
             }
 
             .open-chevron {
                 display: none;
+
+                    @include media(large){
+                        display: none;
+                    }
             }
 
             &.active {
@@ -263,5 +294,4 @@
             outline: 0;
         }
     }
-
 }
