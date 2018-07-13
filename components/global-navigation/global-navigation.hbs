@@ -8,16 +8,20 @@
 
 		     {{>@logo}}
 		        
-			    <a class="coop-nav__toplink coop-nav__trigger">Menu <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l7 7 7-7" stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
+			    <a class="coop-nav__toplink coop-nav__trigger">Menu <svg width="16" height="10" class="open-menu" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l7 7 7-7" stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"/></svg><svg width="12" height="12" class="close-menu" xmlns="http://www.w3.org/2000/svg"><g stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M1 1l10.012 10.012M11 1L1 11"/></g></svg></a>
 			    
 			    <!-- Navbar -->   	
 			    <ul class="coop-nav__list">
 
-			        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Shop</a>
+			        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Shop
+
+			        <svg width="10" height="16" class="chevron" xmlns="http://www.w3.org/2000/svg"><path d="M1 15l7-7-7-7" stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+
+			        <svg width="17" height="10"class="open-chevron" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 8.5l-7-7-7 7" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
 			        	
 			        	<!-- Subcontent level 2 -->   
 			        	<ul class="coop-nav__leveltwo">
-			        	    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Electrical</a>
+			        	    <li class="coop-nav__item"><a href="#" class="coop-nav__link levelthree-trigger">Electrical  <svg width="17" height="10"class="open-chevron" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 8.5l-7-7-7 7" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
 								
 								<ul class="coop-nav__levelthree">
 								    <li class="coop-nav__item"><a href="#" class="coop-nav__link">Washers and dryers</a></li>
@@ -90,43 +94,34 @@
 <script>
 
 if ( $(window).width() < 960) {   
+	$('.coop-nav__trigger').click(function()
+  {
+    $('.coop-nav__list').toggleClass('toggle-show');
+    $('.coop-nav__trigger').toggleClass('active');
 
-function classToggle() {
-  const navs = document.querySelectorAll('.coop-nav__list')
-  navs.forEach(nav => nav.classList.toggle('toggle-show'));
-}
-document.querySelector('.coop-nav__trigger' )
-  .addEventListener('click', classToggle);
+    if (typeof masonryGallery != 'undefined') 
+        masonryGallery();
+   });
+	$('.coop-nav__levelone').click(function()
+   {
+    $('.coop-nav__leveltwo').toggleClass('toggle-show');
+    $('.coop-nav__levelone').toggleClass('active');
 
-function levelTwoToggle() {
-  const navs = document.querySelectorAll('.coop-nav__leveltwo')
-  navs.forEach(nav => nav.classList.toggle('toggle-show'));
-}
-document.querySelector('.coop-nav__link' )
-  .addEventListener('click', levelTwoToggle);
+    if (typeof masonryGallery != 'undefined') 
+        masonryGallery();
+   });
+		$('.levelthree-trigger').click(function()
+   {
+    $('.coop-nav__levelthree').toggleClass('toggle-show');
+    $('.levelthree-trigger').toggleClass('active');
+
+    if (typeof masonryGallery != 'undefined') 
+        masonryGallery();
+   });
+
+	
 
 
-function levelThreeToggle() {
-  const navs = document.querySelectorAll('.coop-nav__levelthree')
-  navs.forEach(nav => nav.classList.toggle('toggle-show'));
-}
-document.querySelector('.coop-nav__link' )
-  .addEventListener('click', levelThreeToggle);
-} 
-
-</script>
-
-<script>
-	 $(function(){
-      $('.coop-nav__trigger').click(function(e) {
-      e.preventDefault();
-      $('.coop-nav__trigger').removeClass('active');
-      $(this).addClass('active');
-  });                                  
-});
-
+ } 
 
 </script>
-
-
-

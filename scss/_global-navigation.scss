@@ -5,6 +5,7 @@
     img {
         width: 26px;
         height: 28px;
+        min-width: 26px;
         @include media(large) {
             width: 54px;
             height: 56px;
@@ -14,6 +15,7 @@
 
 .coop-nav {
 	display: flex;
+    justify-content: space-between;
 	font-family: $medium;
 
 	&__toplink {
@@ -28,6 +30,23 @@
     &__trigger {
     	margin-left: 23px;
     	margin-right: $half-spacing-unit;	
+        min-width: 66px;
+        .open-menu {}
+            margin-left: 5px;
+        .close-menu {
+            margin-left: 5px;
+            display: none;
+        }
+        &.active {
+            border-bottom: 4px solid #326BB7;
+            font-family: $bold;
+            .open-menu {
+                display: none;
+            }
+             .close-menu {
+                display: inline-block;
+             }
+        }
 
     	@include media(large){
       		display: none;
@@ -36,6 +55,7 @@
 	  
     &__finder {
     	margin-right: 38px;
+        min-width: 88px;
 
     	@include media(large){
       		display: none;
@@ -43,10 +63,13 @@
     }
 
 	&__signin {
+        margin-top: 1px;
 	  	border: #166D66 2px solid;
 	  	border-radius: 0;
 	  	height: 47px;
 	  	width: 84px;
+        min-width: 84px;
+        padding: 0;
 	  	box-shadow: none;
 	  	color: #166D66;
 	  	font-size: 16px;
@@ -67,10 +90,10 @@
 	&__list {
 	  	display: none;
 	  	position: absolute;
-	  	margin-top: 53px;
+	  	margin-top: 49px;
 	  	width: 100%;
-	  	padding-right: 24px;
-	  	padding-left: 24px;
+	    padding-right: 17px;
+        padding-left: 0;
 	  	list-style: none;
 
 		  	@include media(large){
@@ -87,6 +110,8 @@
     }
 
     &__item {
+        margin-left: 24px;
+
     	@include media(large){
     		padding-right: 19px;
     	}
@@ -97,12 +122,12 @@
     }
 
     &__levelone {
-
-    	&:active, &:focus {
-    	background-color: #356DB5;
-    	border: 0;
-    	outline: 0;
-    	color: $white;
+        outline: 0;
+    	&.active {
+        	background-color: #356DB5;
+        	border: 0;
+        	outline: 0;
+        	color: $white;
     	}
 
     	@include media(large){
@@ -114,6 +139,7 @@
 
     &__leveltwo {
     	display: none;
+        background-color: #3B70B1;
     	padding-left: 0;
     	list-style: none;
     		
@@ -151,6 +177,8 @@
         font-size: 16px;
         width: 100%;
         padding: 24px 0;
+        box-shadow: none;
+        border-radius: 0;
         @include media(large) {
             margin-top: -54px;
             width: 232px;
@@ -162,9 +190,11 @@
 
 
     &__link {
-    	display: block;
+    	display: flex;
     	width: 100%;
+        background-color: $white;
     	padding: 24px 0;
+        justify-content: space-between;
     	text-decoration: none;
     	font-size: 16px;
     	border-bottom: #A5A5A5 1px solid;
@@ -173,6 +203,30 @@
       			border-bottom: 0;
       			padding: $eighth-spacing-unit 0;
     		}
+
+            svg {
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+
+            .chevron {
+                display: inline-block;
+            }
+
+            .open-chevron {
+                display: none;
+            }
+
+            &.active {
+
+                 .chevron {
+                    display: none;
+                 }
+
+                 .open-chevron {
+                    display: inline-block;
+                 }
+            }
 
     }
 
@@ -199,6 +253,15 @@
     		display: block;
     	}
 
+    }
+
+    .levelthree-trigger {
+         outline: 0;
+        &.active {
+            background-color: #344E87;
+            color: $white;
+            outline: 0;
+        }
     }
 
 }
