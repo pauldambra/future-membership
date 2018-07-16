@@ -46,27 +46,28 @@
 	$('.coop-nav__trigger').click(function()
     
     {
-	    $('.coop-nav__list').toggleClass('toggle-show');
-	    $('.coop-nav__trigger').toggleClass('active');
+
+	$('.coop-nav__list').toggleClass('toggle-show');
+	$('.coop-nav__trigger').toggleClass('active');
  
     });
 
-	$('.coop-nav__levelone').click(function()
+	$('.coop-nav__link-wrap').click(function()
 
     {
 
-    $('.coop-nav__leveltwo').toggleClass('toggle-show');
-    $('.coop-nav__levelone').toggleClass('active');
+    $(this).next('.coop-nav__leveltwo').toggleClass('toggle-show');
+    $(this).toggleClass('active');
 
-   });
+   	});
 
-   $('.levelthree-trigger').click(function()
-   
-   {
+  	$('.levelthree-trigger').click(function()
    	
-    $('.coop-nav__levelthree').toggleClass('toggle-show');
-    $('.levelthree-trigger').toggleClass('active');
+  	{
+   	
+    $(this).next('.coop-nav__levelthree').toggleClass('toggle-show');
+    $(this).toggleClass('active');
 
-   });
+   	});
 
 </script>
