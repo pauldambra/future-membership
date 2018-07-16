@@ -137,30 +137,30 @@
 	  	position: absolute;
 	  	margin-top: 49px;
 	  	width: 100%;
-	    padding-right: 17px;
+	    padding-right: 0;
         padding-left: 0;
 	  	list-style: none;
 
 		  	@include media(large){
 	      		display: flex;	 
                 position: relative;
-	      		margin-top: 30px; 
-                padding-right: 0; 	
+	      		margin-top: 30px; 	
 	      	} 
+   
+           &.toggle-show {
 
-	      	&.toggle-show {
-	      		display: block;
-
-                @include media(large) {
-                    display: flex;
+                //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
+                @media (max-width: 960px) {
+                    display: block;
                 }
-	      	}
+
+            }
     }
 
     &__item {
         margin-left: 24px;
 
-    	@include media(large){
+    	@include media(large) {
     		padding-right: 0;
             margin-left: 0;
     	}
@@ -174,13 +174,22 @@
     &__levelone {
         outline: 0;
 
-    	&.active {
-        	background-color: #356DB5;
-            padding-left: 24px;
-        	border: 0;
-        	outline: 0;
-        	color: $white;
-    	}
+        &:active {
+            color: #282828;
+        }
+      
+      //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
+      @media (max-width: 960px) {
+
+        	&.active {
+            	background-color: #3E71AF;
+                padding-left: 24px;
+            	border: 0;
+            	outline: 0;
+            	color: $white;
+        	}
+
+        }
 
     	@include media(large) {
 
@@ -200,13 +209,18 @@
         background-color: #3B70B1;
     	padding-left: 0;
     	list-style: none;
-    		
-	      	&.toggle-show {
-	      		display: block;
 
-                @include media(large) {
-                    display: flex;
+           @media (max-width: 960px) {
+                margin-left: -24px;
+            }
+    		
+    	   &.toggle-show {
+
+                //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
+                @media (max-width: 960px) {
+        	      	display: block;
                 }
+
 	      	}
 
 	        @include media(large) {
@@ -226,6 +240,18 @@
             @include media(large) {
                 &:hover {
                     display: flex;
+                    margin-top:10px;
+
+                    .coop-nav__levelone {
+                        border-bottom: 8px solid #356DB5!important;
+                    }
+                }
+
+                .coop-nav__item {
+                    display: inline;
+                    width: -webkit-calc(16.6% - 16px);
+                    width: -moz-calc(16.6% - 16px);
+                    width: calc(16.6% - 16px);
                 }
             }
 
@@ -235,14 +261,15 @@
     	display: none;
     	padding-left: 0;
     	list-style: none;
+   
+        &.toggle-show {
 
-    		&.toggle-show {
-	      		display: block;
+            //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
+            @media (max-width: 960px) {
+                display: block;
+            }
 
-                @include media(large) {
-                    display: flex;
-                }
-	      	}
+        }
 
 	      	@include media(large) {
 	      		display: block;
@@ -254,17 +281,18 @@
     }
 
     &__member {
+        position: absolute;
         background-color: #0F8482;
         color: $white;
         border: 0;
         font-size: 16px;
         width: 100%;
-        padding: 24px 0;
+        padding: 24px;
         box-shadow: none;
         border-radius: 0;
+        text-align: left;
 
         @include media(large) {
-            position: absolute;
             margin-top: -61px;
             right: 100px;
             width: 232px;
@@ -272,6 +300,7 @@
             min-width: 232px;
             padding: 0;
             border-radius: 7px;
+            text-align: center;
         }
     } 
 
@@ -279,18 +308,21 @@
     &__link {
     	display: flex;
     	width: 100%;
-        background-color: $white;
-    	padding: 24px 0  24px 0;
+    	padding: 24px 0 24px 0;
         justify-content: space-between;
     	text-decoration: none;
     	font-size: 16px;
-    	border-bottom: #A5A5A5 1px solid;
+
+  
+            //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
+            @media (max-width: 960px) {
+                background-color: $white;
+                border-bottom: #A5A5A5 1px solid;
+            }  
 
 	      	@include media(large){
-      			border-bottom: 0;
       			padding: $eighth-spacing-unit 20px;
-                background-color: transparent;
-    		}
+    		}             
 
             @include media(xlarge) {
                 padding-right: $half-spacing-unit;
@@ -360,12 +392,16 @@
 
     }
 
-    .levelthree-trigger {
-         outline: 0;
-        &.active {
-            background-color: #344E87;
-            color: $white;
-            outline: 0;
+    //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
+    @media (max-width: 960px) {
+
+        .levelthree-trigger {
+             outline: 0;
+            &.active {
+                background-color: #344E87;
+                color: $white;
+                outline: 0;
+            }
         }
     }
 }

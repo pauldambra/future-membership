@@ -16,10 +16,13 @@
 
  					  {{>@food-ideas}}
 
-				        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Arrange a funeral or plan</a></li>
-				        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Buy insurance</a></li>
-				        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Get legal help</a></li>
-				        <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Deals and offers</a></li>
+ 					  {{>@arrange-funeral}}
+
+ 					  {{>@buy-insurance}}
+
+ 					  {{>@legal-help}}
+  
+				      <li class="coop-nav__item"><a href="#" class="coop-nav__link coop-nav__levelone">Deals and offers</a></li>
 				       
 				        <!-- Member button --> 
 				   	   <button class="coop-nav__member">Become a Co-op Member</button>
@@ -40,35 +43,30 @@
 
 <script>
 
-if ( $(window).width() < 960) {   
 	$('.coop-nav__trigger').click(function()
-  {
-    $('.coop-nav__list').toggleClass('toggle-show');
-    $('.coop-nav__trigger').toggleClass('active');
+    
+    {
+	    $('.coop-nav__list').toggleClass('toggle-show');
+	    $('.coop-nav__trigger').toggleClass('active');
+ 
+    });
 
-    if (typeof masonryGallery != 'undefined') 
-        masonryGallery();
-   });
 	$('.coop-nav__levelone').click(function()
-   {
+
+    {
+
     $('.coop-nav__leveltwo').toggleClass('toggle-show');
     $('.coop-nav__levelone').toggleClass('active');
 
-    if (typeof masonryGallery != 'undefined') 
-        masonryGallery();
    });
-		$('.levelthree-trigger').click(function()
+
+   $('.levelthree-trigger').click(function()
+   
    {
+   	
     $('.coop-nav__levelthree').toggleClass('toggle-show');
     $('.levelthree-trigger').toggleClass('active');
 
-    if (typeof masonryGallery != 'undefined') 
-        masonryGallery();
    });
-
-	
-
-
- } 
 
 </script>
