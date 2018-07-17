@@ -65,7 +65,7 @@
 
     &__trigger {
     	margin-left: 23px;
-    	margin-right: $half-spacing-unit;	
+    	margin-right: $quarter-spacing-unit;	
         min-width: 66px;
 
         .open-menu {
@@ -99,9 +99,11 @@
     	margin-right: 38px;
         min-width: 88px;
 
-    	@include media(large){
-      		display: none;
-    	}
+    	@include media(large) {
+            position: absolute;
+            margin-top: -140px;
+            right: 355px;  
+        }
     }
 
 	&__signin {
@@ -287,7 +289,7 @@
         }
       
     	@include media(large) {
-
+           border-bottom: 10px solid $white;
            font-family: $medium;
 
     		&:hover {
@@ -340,13 +342,11 @@
             }
 
             @include media(large) {
+                  .coop-nav__levelone {
+                        border-bottom: 8px solid $white;
+                    }
                 &:hover {
                     display: flex;
-                    margin-top:10px;
-
-                    .coop-nav__levelone {
-                        border-bottom: 8px solid #356DB5!important;
-                    }
                 }
             }
 
