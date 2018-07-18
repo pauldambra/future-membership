@@ -45,8 +45,8 @@
 
 }
 
-.coop-nav {
-    display: block;
+.coop-nav { 
+    display: block;  //Older browsers
 	display: flex;
     justify-content: space-between;
 	font-family: $medium;
@@ -135,10 +135,16 @@
 		  	}
 	}
 
+    &__wrap {
+          @include media(large) {
+            display: inline-block;
+          }
+    }
+
     &__link-wrap {
         @include media(large) {
             &:hover + .coop-nav__leveltwo {
-                   display: block;
+                   display: block;  //Older browsers
                    display: flex;
                 }
         }
@@ -153,7 +159,7 @@
         }
 
         @media (max-width: 960px) {
-            display: block;
+            display: block;  //Older browsers
             display: flex;
             margin-left: -24px;
          }
@@ -191,8 +197,8 @@
         padding-left: 0;
 	  	list-style: none;
 
-		  	@include media(large){
-                display: block;
+		  	@include media(large) {
+                display: block;  //Older browsers
 	      		display: flex;	 
                 position: relative;
 	      		margin-top: 30px; 	
@@ -212,12 +218,15 @@
         margin-left: 24px;
 
     	@include media(large) {
+            //display: inline-block; //Older browsers
+           // display: inline-flex;
     		padding-right: 0;
             margin-left: 0;
 
             &:hover {
-                ,coop-nav__leveltwo {
-                    display: block;
+                .coop-nav__leveltwo {
+                    display: inline-block; //Older browsers
+                    display: flex;
 
                     .coop-nav__levelone {
                         border-bottom: 10px solid #326BB7;
@@ -234,7 +243,7 @@
     }
 
         &__link {
-        display: block;
+        display: block;  //Older browsers
         display: flex;
         width: 100%;
         padding: 24px 0 24px 0;
@@ -317,7 +326,7 @@
     		}
 
             &:hover + .coop-nav__leveltwo {
-               display: block;
+               display: block;  //Older browsers
                display: flex;
             }
     	}
@@ -366,7 +375,7 @@
                         border-bottom: 8px solid $white;
                     }
                 &:hover {
-                    display: block;
+                    display: block;  //Older browsers
                     display: flex;
                 }
             }
