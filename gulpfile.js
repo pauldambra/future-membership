@@ -60,7 +60,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-    return gulp.src('scss/main.scss')
+    return gulp.src(['scss/main.scss','scss/ie-9.scss','scss/ie-8.scss'])
         .pipe(sass({
 
             includePaths: [
