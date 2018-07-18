@@ -46,6 +46,7 @@
 }
 
 .coop-nav {
+    display: block;
 	display: flex;
     justify-content: space-between;
 	font-family: $medium;
@@ -137,6 +138,7 @@
     &__link-wrap {
         @include media(large) {
             &:hover + .coop-nav__leveltwo {
+                   display: block;
                    display: flex;
                 }
         }
@@ -151,6 +153,7 @@
         }
 
         @media (max-width: 960px) {
+            display: block;
             display: flex;
             margin-left: -24px;
          }
@@ -189,6 +192,7 @@
 	  	list-style: none;
 
 		  	@include media(large){
+                display: block;
 	      		display: flex;	 
                 position: relative;
 	      		margin-top: 30px; 	
@@ -230,6 +234,7 @@
     }
 
         &__link {
+        display: block;
         display: flex;
         width: 100%;
         padding: 24px 0 24px 0;
@@ -312,6 +317,7 @@
     		}
 
             &:hover + .coop-nav__leveltwo {
+               display: block;
                display: flex;
             }
     	}
@@ -360,6 +366,7 @@
                         border-bottom: 8px solid $white;
                     }
                 &:hover {
+                    display: block;
                     display: flex;
                 }
             }
@@ -505,6 +512,10 @@
 
         .levelthree-trigger {
             font-family: $bold;
+            border-bottom:  4px solid #f7f7f7;
+            &:hover {
+               border-bottom: 4px solid #326BB7;
+            }
         }
     }
 }
