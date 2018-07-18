@@ -7981,7 +7981,8 @@ Helpers mixins - Co-op Front-end Toolkit
     @media (min-width: 1300px) {
       .fm .coop-nav__item {
         padding-right: 0;
-        margin-left: 24px; } }
+        margin-right: 8px;
+        margin-left: 8px; } }
   .fm .coop-nav__link {
     display: -ms-flexbox;
     display: flex;
@@ -8057,8 +8058,7 @@ Helpers mixins - Co-op Front-end Toolkit
         border-top: 2px solid #356DB5;
         border-bottom: 8px solid #356DB5;
         left: 0;
-        padding-top: 8px;
-        padding-bottom: 16px; } }
+        padding: 8px 16px; } }
     .fm .coop-nav__leveltwo .coop-nav__link {
       padding-left: 24px; }
       @media (min-width: 960px) {

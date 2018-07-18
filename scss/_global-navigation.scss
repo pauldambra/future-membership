@@ -224,7 +224,8 @@
 
     	@include media(xlarge) {
     		padding-right: 0;
-            margin-left: 24px;
+            margin-right: $eighth-spacing-unit;
+            margin-left: $eighth-spacing-unit;
     	}
     }
 
@@ -343,8 +344,7 @@
 	        	border-top: 2px solid #356DB5;
 	        	border-bottom: 8px solid #356DB5;
                 left: 0;
-                padding-top: $eighth-spacing-unit;
-                padding-bottom: $quarter-spacing-unit;
+                padding: $eighth-spacing-unit $quarter-spacing-unit;
 	        }
 
             .coop-nav__link {
