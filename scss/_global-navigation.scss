@@ -210,6 +210,16 @@
     	@include media(large) {
     		padding-right: 0;
             margin-left: 0;
+
+            &:hover {
+                ,coop-nav__leveltwo {
+                    display: block;
+
+                    .coop-nav__levelone {
+                        border-bottom: 10px solid #326BB7;
+                    }
+                }
+            }
     	}
 
     	@include media(xlarge) {
@@ -225,6 +235,10 @@
         justify-content: space-between;
         text-decoration: none;
         font-size: 16px;
+
+        &:hover {
+            color: #282828;
+        }
 
   
         //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
@@ -388,13 +402,20 @@
 	      	@include media(large) {
 	      		display: block;
 
-                  .coop-nav__link {
+                  .coop-nav__item {
+
+                      border-bottom: 4px solid #F7F7F7;
 
                     &:hover {
                      border-bottom: 4px solid #326BB7;
                     }
 
                   }
+
+                  .coop-nav__link {
+                    padding-bottom: 0;
+                  }
+
 	      	}
 
             .coop-nav__item {
