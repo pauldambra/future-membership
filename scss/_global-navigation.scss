@@ -3,7 +3,7 @@
 }
 
 .coop-nav {
-    //border: green 1px solid; 
+    //border: green 1px solid;
 }
 
 .coop-nav__list {
@@ -45,7 +45,7 @@
 
 }
 
-.coop-nav { 
+.coop-nav {
     display: block;  //Older browsers
 	display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@
 
     &__trigger {
     	margin-left: 23px;
-    	margin-right: $quarter-spacing-unit;	
+    	margin-right: $quarter-spacing-unit;
         min-width: 66px;
 
         .open-menu {
@@ -95,15 +95,15 @@
       		display: none;
     	}
 	}
-	  
+
     &__finder {
     	margin-right: 38px;
         min-width: 88px;
 
     	@include media(large) {
             position: absolute;
-            margin-top: -140px;
-            right: 355px;  
+            top: 5px;
+            right: 355px;
         }
     }
 
@@ -126,7 +126,7 @@
 
 		  	@include media(large) {
                position: absolute;
-               top: 5px;  
+               top: 5px;
                right: 10px;
 		  	   height: 41px;
 	  		   width: 85px;
@@ -199,11 +199,11 @@
 
 		  	@include media(large) {
                 display: block;  //Older browsers
-	      		display: flex;	 
+	      		display: flex;
                 position: relative;
-	      		margin-top: 30px; 	
-	      	} 
-   
+	      		margin-top: 30px;
+	      	}
+
            &.toggle-show {
 
                 //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
@@ -255,17 +255,17 @@
             color: #282828;
         }
 
-  
+
         //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
         @media (max-width: 960px) {
             background-color: $white;
             border-bottom: #A5A5A5 1px solid;
-        }  
+        }
 
         @include media(large) {
             padding: $eighth-spacing-unit 20px;
             font-family: $regular;
-        }             
+        }
 
         @include media(xlarge) {
             padding-right: $half-spacing-unit;
@@ -316,7 +316,7 @@
         &:active {
             color: #282828;
         }
-      
+
     	@include media(large) {
            border-bottom: 10px solid $white;
            font-family: $medium;
@@ -342,7 +342,7 @@
            @media (max-width: 960px) {
                 margin-left: -24px;
             }
-    		
+
     	   &.toggle-show {
 
                 //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
@@ -405,7 +405,7 @@
     	padding-left: 0;
     	list-style: none;
         margin-bottom: 0;
-   
+
         &.toggle-show {
 
             //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
@@ -452,7 +452,7 @@
         text-align: left;
 
         @include media(large) {
-            margin-top: -61px;
+            top: -61px;
             right: 100px;
             width: 232px;
             height: 41px;
@@ -461,10 +461,10 @@
             border-radius: 7px;
             text-align: center;
         }
-    } 
+    }
 
     &.toggle-show {
-        
+
     	@include media(large){
     		display: none;
     	}
