@@ -362,6 +362,19 @@
                 padding: $eighth-spacing-unit $quarter-spacing-unit;
 	        }
 
+            >.coop-nav__item {
+                @include media(large) {
+                    @include ie(9) {
+                        display: block;
+                        max-width: 20%;
+                        float:left;
+                        &.mega-content {
+                            max-width: 40%;
+                        }
+                    }
+                }
+            }
+
             .coop-nav__link {
                 padding-left: 24px;
                      @include media(large) {
@@ -387,8 +400,8 @@
                     padding-left: 0;
                 }
 
-            //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
-            @media (max-width: 960px) {
+                //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
+                @media (max-width: 960px) {
                     margin-left: 0;
 
                     ul {
@@ -527,4 +540,5 @@
             }
         }
     }
+
 }
