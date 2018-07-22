@@ -27,7 +27,7 @@
 }
 
 .coop-logo {
-    display: block;
+    display: inline-block;
     display: flex;
     flex: 0 1 auto;
 
@@ -51,7 +51,7 @@
     }
 
 	&__toplink {
-		display: block;
+		display: inline-block;
         display: flex;
         text-decoration: none;
         text-align: center;
@@ -59,11 +59,11 @@
         justify-content: center;
 
         svg {
-            margin-left: 6px;
+            margin-left: 6px; //icon
         }
 
 		&:hover {
-		  color: #282828 ;
+		  color: #282828;
 		  text-decoration: underline;
 		}
 	}
@@ -99,7 +99,7 @@
 	}
 
     &__finder {
-
+        min-width:107px;
     	@include media(large) {
             position: absolute;
             top: 5px;
