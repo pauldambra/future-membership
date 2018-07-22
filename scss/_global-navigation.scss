@@ -44,30 +44,39 @@
 	display: flex;
     justify-content: space-between;
 	font-family: $medium;
+    padding-left: 16px;
 
     @include media(large){
         display: block;
     }
 
 	&__toplink {
-		text-decoration: none;
-		  	&:hover {
-		  	   color: #282828 ;
-			   text-decoration: underline;
+		display: block;
+        display: flex;
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            margin-left: 6px;
+        }
+
+		&:hover {
+		  color: #282828 ;
+		  text-decoration: underline;
 		}
 	}
 
     &__trigger {
-    	margin-left: 23px;
-    	margin-right: $quarter-spacing-unit;
         min-width: 66px;
 
         .open-menu {
-            margin-left: 5px;
+            // margin-left: 5px;
         }
 
         .close-menu {
-            margin-left: 5px;
+            // margin-left: 5px;
             display: none;
         }
 
@@ -90,8 +99,6 @@
 	}
 
     &__finder {
-    	margin-right: 38px;
-        min-width: 88px;
 
     	@include media(large) {
             position: absolute;
@@ -101,7 +108,6 @@
     }
 
 	&__signin {
-        margin-top: 1px;
 	  	border: #166D66 2px solid;
 	  	border-radius: 0;
 	  	height: 47px;
