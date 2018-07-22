@@ -16,31 +16,25 @@
 
 .coop-header {
     border-bottom: 1px solid #d8d8d8;
+    padding-top: 19px;
 
     @include media(large) {
         height: 122px;
         box-shadow: 0 2px 1px 0 rgba(0,0,0,0.20);
         border: 0;
+
     }
 }
 
 .coop-logo {
-    margin-top: 10px;
-    margin-left: 24px;
-
-    @include media(large) {
-        margin-left: 0;
-    }
+    display: block;
+    display: flex;
+    flex: 0 1 auto;
 
     img {
-        width: 26px;
-        height: 28px;
-        min-width: 26px;
-
-        @include media(large) {
-            width: 54px;
-            height: 56px;
-      }
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
     }
 
 }
@@ -56,7 +50,6 @@
     }
 
 	&__toplink {
-        margin-top: 10px;
 		text-decoration: none;
 		  	&:hover {
 		  	   color: #282828 ;
