@@ -77,6 +77,7 @@
     &__trigger {
         min-width: 66px;
         margin-left: $quarter-spacing-unit;
+        border-bottom: 4px solid transparent;
 
         .open-menu {
             // margin-left: 5px;
@@ -89,7 +90,7 @@
 
         &.active {
             font-family: $bold;
-            border-bottom: 4px solid #326BB7;
+            border-bottom-color: #326BB7;
 
 
             .open-menu {
