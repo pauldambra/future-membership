@@ -386,7 +386,7 @@
     	   &.toggle-show {
                 .coop-nav__link {
                     @include media(large) {
-                        border-bottom: #3B70B1 2px solid;
+                        // border-bottom: #3B70B1 2px solid;
                     }
                 }
 
@@ -467,7 +467,7 @@
 
         &.toggle-show {
             .coop-nav__link {
-                border-bottom: #344E87 2px solid;
+                // border-bottom: #344E87 2px solid;
             }
             //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
             @media (max-width: 960px) {
