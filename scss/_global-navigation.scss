@@ -102,12 +102,13 @@
 
     &__finder {
         min-width:107px;
-        height: 41px;
+        height: 47px;
         text-decoration: underline;
     	@include media(large) {
             position: absolute;
             top: 5px;
             right: 355px;
+            height: 41px;
         }
     }
 
@@ -209,6 +210,9 @@
 	      		display: flex;
                 position: relative;
 	      		margin-top: 30px;
+                margin-right: 30px;
+                align-self: flex-end;
+                justify-content: space-around;
 	      	}
 
            &.toggle-show {
