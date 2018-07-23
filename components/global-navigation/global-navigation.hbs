@@ -3,11 +3,11 @@
 
 	<div class="wrap">
 
-			    <nav class="coop-nav">
+			    <nav class="coop-nav" role="navigation" aria-label="Co-op global navigation">
 
 			     {{>@logo}}
 
-				    <a class="coop-nav__toplink coop-nav__trigger">Menu
+				    <a class="coop-nav__toplink coop-nav__trigger" aria-haspopup="true" >Menu
                         <svg width="16" height="10" class="open-menu" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1l7 7 7-7" stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"/>
                         </svg>
@@ -19,7 +19,7 @@
                     </a>
 
 				    <!-- Navbar -->
-				    <ul class="coop-nav__list">
+				    <ul class="coop-nav__list" role="menubar" aria-label="primary-navigation" aria-expanded="">
 
  					  {{>@shop}}
 
@@ -31,18 +31,20 @@
 
  					  {{>@legal-help}}
 
-				      <li class="coop-nav__item coop-nav__wrap"><a href="#" class="coop-nav__link coop-nav__levelone">Deals and offers</a></li>
+				      <li class="coop-nav__item coop-nav__wrap">
+                        <a href="#" class="coop-nav__link coop-nav__levelone" role="menuitem">Deals and offers</a>
+                      </li>
 
 				        <!-- Member button -->
-				   	   <button class="coop-nav__member">Become a Co-op Member</button>
+				   	   <button class="coop-nav__member" role="menuitem">Become a Co-op Member</button>
 				    </ul>
 
 				    <!-- Find a store link -->
-				    <a class="coop-nav__toplink coop-nav__finder">Find a store</a>
+				    <a href="#" class="coop-nav__toplink coop-nav__finder" role="menuitem">Find a store</a>
 
 
 					<!-- Signin button -->
-			        <button class="coop-nav__signin btn">Sign in</button>
+			        <button class="coop-nav__signin btn" role="menuitem">Sign in</button>
 
 			    </nav>
 	</div>
