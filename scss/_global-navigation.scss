@@ -57,7 +57,7 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-        font-family: $bold;
+        font-family: $medium;
 
         svg {
             margin-left: 6px; //icon
@@ -82,6 +82,7 @@
         }
 
         &.active {
+            font-family: $bold;
             border-bottom: 4px solid #326BB7;
 
 
@@ -101,6 +102,8 @@
 
     &__finder {
         min-width:107px;
+        height: 41px;
+        text-decoration: underline;
     	@include media(large) {
             position: absolute;
             top: 5px;
@@ -131,8 +134,10 @@
                right: 10px;
 		  	   height: 41px;
 	  		   width: 85px;
+               border: #166D66 2px solid;
                border-radius: 7px;
                font-size: 16px;
+               text-decoration: none;
 		  	}
 	}
 
