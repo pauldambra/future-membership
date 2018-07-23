@@ -57,6 +57,7 @@
         text-align: center;
         align-items: center;
         justify-content: center;
+        font-family: $bold;
 
         svg {
             margin-left: 6px; //icon
@@ -82,7 +83,7 @@
 
         &.active {
             border-bottom: 4px solid #326BB7;
-            font-family: $bold;
+
 
             .open-menu {
                 display: none;
@@ -108,7 +109,8 @@
     }
 
 	&__signin {
-	  	border: #166D66 2px solid;
+        background-color: $white;
+	  	border: none;
 	  	border-radius: 0;
 	  	height: 47px;
 	  	width: 84px;
@@ -117,10 +119,10 @@
 	  	box-shadow: none;
 	  	color: #166D66;
 	  	font-size: 16px;
+        text-decoration: underline;
 
 		  	&:hover {
 		  		text-decoration: underline;
-		  		background-color: $white;
 		  	}
 
 		  	@include media(large) {
