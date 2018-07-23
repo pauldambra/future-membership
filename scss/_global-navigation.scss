@@ -494,6 +494,9 @@
             border-radius: 7px;
             text-align: center;
         }
+        @include media(xlarge) {
+            right: 61px;
+        }
     }
 
     &.toggle-show {
