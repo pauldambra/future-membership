@@ -215,6 +215,12 @@
                 justify-content: space-around;
 	      	}
 
+            @include media(xlarge) {
+                width: 94%;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+
            &.toggle-show {
 
                 //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
