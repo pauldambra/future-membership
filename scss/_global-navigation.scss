@@ -364,7 +364,9 @@
             }
 
     	   &.toggle-show {
-
+                .coop-nav__link {
+                    border-bottom: #3B70B1 2px solid;
+                }
                 //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
                 @media (max-width: 960px) {
         	      	display: block;
@@ -440,7 +442,9 @@
         margin-bottom: 0;
 
         &.toggle-show {
-
+            .coop-nav__link {
+                border-bottom: #344E87 2px solid;
+            }
             //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
             @media (max-width: 960px) {
                 display: block;
@@ -545,6 +549,7 @@
              outline: 0;
             &.active {
                 background-color: #344E87;
+                border-color: #344E87;
                 color: $white;
                 outline: 0;
             }
