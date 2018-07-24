@@ -392,6 +392,8 @@
                 //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
                 @media (max-width: 960px) {
         	      	display: block;
+                    display: flex;
+                    flex-direction: column
                 }
 
 	      	}
@@ -408,8 +410,6 @@
 	        }
 
             @include media(xlarge) {
-                // width: 107.5%;
-                // left: -7.5%;
                 paddding: $eighth-spacing-unit $half-spacing-unit;
             }
 
