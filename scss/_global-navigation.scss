@@ -410,7 +410,9 @@
 	        }
 
             @include media(xlarge) {
-                paddding: $eighth-spacing-unit $half-spacing-unit;
+                // width: 100vw;
+                // left: -5vw;
+                padding: $eighth-spacing-unit $half-spacing-unit;
             }
 
             >.coop-nav__item {
