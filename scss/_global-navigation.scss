@@ -210,51 +210,41 @@
 
 	&__list {
         background: $white;
-	  	display: none;
-	  	position: absolute;
-	  	margin-top: 49px;
-	  	width: 100%;
-	    padding-right: 0;
+        display: none;
+        margin-bottom: 0;
         padding-left: 0;
-	  	list-style: none;
+        width: 100%;
+        list-style: none;
+        position: absolute;
+	  	top: 49px;
 
-		  	@include media(large) {
-                background: transparent;
-                display: block;  //Older browsers
-	      		display: flex;
-                flex: 0 0 auto;
-                position: relative;
-	      		// margin-top: 30px;
-                margin-right: 30px;
-                padding-left: 32px;
-                margin-bottom: 0;
-                align-self: flex-end;
-                justify-content: end;
+	  	@include media(large) {
+            background: transparent;
+            display: block;  //Older browsers
+            display: flex;
+            align-self: flex-end;
+            flex: 1;
+            justify-content: space-around;
+            position: relative;
+            top: 0;
+            width: auto;
 
-                @include ie(9) {
-                    margin: 18px;
-                }
-	      	}
+            @include ie(9) {
+                margin: 28px;
+            }
+      	}
 
-            @include media(xlarge) {
-                width: 94%;
-                // margin: 0 auto;
-                margin-top: 30px;
-                justify-content: space-around;
-                @include ie(9) {
-                    margin-top: 18px;
-                }
+       &.toggle-show {
+
+            //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
+            @media (max-width: 960px) {
+                display: block;
+                display: flex;
+                flex-direction: column;
+                left: 0;
             }
 
-           &.toggle-show {
-
-                //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
-                @media (max-width: 960px) {
-                    display: block;
-                    left: 0;
-                }
-
-            }
+        }
     }
 
     &__item {
@@ -306,7 +296,7 @@
 
 
         //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
-        @media (max-width: 960px) {
+        @media (max-width: 959px) {
             background-color: $white;
             border-bottom: #A5A5A5 1px solid;
         }
@@ -409,13 +399,19 @@
 	        @include media(large) {
 	        	position: absolute;
 	        	background-color: #F7F7F7;
-	        	width: 100%;
+	        	width: 104%;
 	        	border-top: 2px solid #356DB5;
 	        	border-bottom: 8px solid #356DB5;
-                left: 0;
+                left: -4%;
                 top: 44px;
                 padding: $eighth-spacing-unit $quarter-spacing-unit;
 	        }
+
+            @include media(xlarge) {
+                // width: 107.5%;
+                // left: -7.5%;
+                paddding: $eighth-spacing-unit $half-spacing-unit;
+            }
 
             >.coop-nav__item {
                 @include media(large) {
@@ -432,10 +428,10 @@
 
             .coop-nav__link {
                 padding-left: 24px;
-                     @include media(large) {
+                    @include media(large) {
                         font-size: 18px;
                         padding-left: 0;
-                     }
+                    }
             }
 
             @include media(large) {
@@ -513,7 +509,6 @@
     }
 
     &__member {
-        position: absolute;
         background-color: #0F8482;
         color: $white;
         border: 0;
@@ -525,8 +520,9 @@
         text-align: left;
 
         @include media(large) {
+            position: absolute;
             top: -68px;
-            right: 134px;
+            right: 100px;
             width: 232px;
             height: 41px;
             min-width: 232px;
@@ -535,18 +531,11 @@
             text-align: center;
 
             @include ie(9) {
-                top: -58px;
-                right: 116px;
+                top: -68px;
+                right: 70px;
             }
         }
 
-        @include media(xlarge) {
-            right: 70px;
-
-            @include ie(9) {
-                right: 42px;
-            }
-        }
     }
 
     &.toggle-show {
