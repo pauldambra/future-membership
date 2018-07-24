@@ -479,6 +479,7 @@
             //Need to sort mixin out for this for some reason we only have min width set in the frontend toolkit
             @media (max-width: 960px) {
                 display: block;
+                background: #344E87;
             }
 
         }
@@ -488,6 +489,7 @@
 
                   .coop-nav__item {
                     border-bottom: 4px solid #F7F7F7;
+                    margin: 0;
 
                     &:first-child .coop-nav__link {
                         padding-top: 0;
@@ -505,9 +507,6 @@
 
 	      	}
 
-            .coop-nav__item {
-                margin-left: 0;
-            }
     }
 
     &__member {
@@ -586,7 +585,7 @@
              outline: 0;
             &.active {
                 background-color: #344E87;
-                // border-color: #344E87;
+                border-bottom-color: #344E87;
                 color: $white;
                 outline: 0;
             }
