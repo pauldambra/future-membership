@@ -46,13 +46,21 @@
 
 }
 
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+           list-style: none;
+        }
+    }
+
 .coop-nav {
     display: block;  //Older browsers
 	display: flex;
     justify-content: space-between;
     padding-left: 16px;
     font-family: $medium;
-
 
     @include media(large){
         display: block;
@@ -375,8 +383,6 @@
     	display: none;
         margin-bottom: 0;
         background-color: #3B70B1;
-    	padding-left: 0;
-    	list-style: none;
 
            @media (max-width: 960px) {
                 margin-left: -24px;

@@ -24,3 +24,47 @@ $show-guides:false;
   @import "heading-block";
   @import "logo";
 }
+
+@media (max-width: 960px) {
+  .no-js {
+
+   .coop-nav {
+
+      .coop-nav__list {
+        display: block;
+
+        .coop-nav__item {
+          margin-left: 0;
+          margin-right: 24px;
+          width: 100%;
+
+          .coop-nav__leveltwo {
+             display: block;
+             margin-left: 0;
+             background-color: transparent;
+
+              .coop-nav__link {
+                 font-family: $medium;
+                 padding: $eighth-spacing-unit 24px;
+              }
+          }
+        }
+
+        .coop-nav__link {
+          border-bottom: 0;
+          padding: $eighth-spacing-unit $eighth-spacing-unit 0 0;
+          font-family: $bold;
+            svg {
+              display: none;
+            }
+        }
+      }
+      .coop-nav__member {
+         font-family: $bold;
+         background-color: transparent;
+         color: #282828;
+         padding-left: 0;
+      }
+    }
+  }
+}
