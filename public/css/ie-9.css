@@ -3157,7 +3157,12 @@ Colour
   height: 20px;
   margin-left: 10px;
   vertical-align: middle;
-  transition: color 0s; }
+  transition: color 0s;
+  content: "...";
+  border-width: 0;
+  width: auto;
+  height: auto;
+  margin: 0; }
 
 .btn-back:before {
   position: relative;
@@ -8059,7 +8064,9 @@ Helpers mixins - Co-op Front-end Toolkit
       align-self: center;
   height: 41px;
   width: 38px;
-  margin-left: 16px; }
+  margin-left: 16px;
+  position: relative;
+  top: 30px; }
   @media (min-width: 1300px) {
     .fm .coop-logo, .fm .coop-logo-large {
       margin-left: 0; } }
@@ -8205,7 +8212,8 @@ Helpers mixins - Co-op Front-end Toolkit
             justify-content: space-around;
         position: relative;
         top: 0;
-        width: auto; } }
+        width: auto;
+        margin: 28px; } }
     @media (max-width: 960px) {
       .fm .coop-nav__list.toggle-show {
         display: block;
@@ -8235,7 +8243,9 @@ Helpers mixins - Co-op Front-end Toolkit
       .fm .coop-nav__item {
         padding-right: 0;
         margin-right: 8px;
-        margin-left: 8px; } }
+        margin-left: 8px;
+        margin-right: 0;
+        margin-left: 0; } }
   .fm .coop-nav__link {
     display: block;
     display: -ms-flexbox;
@@ -8317,6 +8327,13 @@ Helpers mixins - Co-op Front-end Toolkit
     @media (min-width: 1300px) {
       .fm .coop-nav__leveltwo {
         padding: 8px 32px; } }
+    @media (min-width: 960px) {
+      .fm .coop-nav__leveltwo > .coop-nav__item {
+        display: block;
+        max-width: 20%;
+        float: left; }
+        .fm .coop-nav__leveltwo > .coop-nav__item.mega-content {
+          max-width: 30%; } }
     .fm .coop-nav__leveltwo .coop-nav__link {
       padding-left: 24px; }
       @media (min-width: 960px) {
@@ -8380,7 +8397,9 @@ Helpers mixins - Co-op Front-end Toolkit
         min-width: 232px;
         padding: 0;
         border-radius: 7px;
-        text-align: center; } }
+        text-align: center;
+        top: -68px;
+        right: 70px; } }
   @media (min-width: 960px) {
     .fm .coop-nav.toggle-show {
       display: none; } }

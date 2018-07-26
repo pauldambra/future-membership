@@ -38,6 +38,18 @@ $show-guides:false;
           margin-right: 24px;
           width: 100%;
 
+          &:last-child {
+            padding-bottom: $eighth-spacing-unit;
+          }
+
+         .coop-nav__levelone {
+           border-top: #A5A5A5 1px solid;
+         }
+
+         .first-item {
+          border-top: 0;
+         }
+
           .coop-nav__leveltwo {
              display: block;
              margin-left: 0;
@@ -46,7 +58,7 @@ $show-guides:false;
               .coop-nav__link {
                  font-family: $medium;
                  padding: $eighth-spacing-unit 24px;
-              }
+               }
           }
         }
 

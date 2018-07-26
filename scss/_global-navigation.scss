@@ -16,13 +16,13 @@
 
 .coop-header {
     border-bottom: 1px solid #d8d8d8;
-    padding-top: 19px;
+    padding: $eighth-spacing-unit 0;
 
     @include media(large) {
         // height: 122px;
         box-shadow: 0 2px 1px 0 rgba(0,0,0,0.20);
         border: 0;
-        padding-top: 0;
+        padding: 0;
 
     }
 }
@@ -32,6 +32,13 @@
     display: flex;
     flex: 0 1 auto;
     align-self: center;
+    height: 41px;
+    width: 38px;
+    margin-left: $quarter-spacing-unit;
+
+    @include media(xlarge) {
+        margin-left: 0;
+    }
 
     @include ie(9) {
         position: relative;
@@ -39,9 +46,9 @@
     }
 
     img {
-        width: 36px;
-        height: 36px;
-        min-width: 36px;
+        width: 38px;
+        height: 41px;
+        min-width: 38px;
     }
 
 }
@@ -59,7 +66,6 @@
     display: block;  //Older browsers
 	display: flex;
     justify-content: space-between;
-    padding-left: 16px;
     font-family: $medium;
 
     @include media(large){
@@ -89,7 +95,6 @@
 
     &__trigger {
         min-width: 66px;
-        margin-left: $quarter-spacing-unit;
         border-bottom: 4px solid transparent;
 
         .open-menu {
@@ -121,25 +126,23 @@
 	}
 
     &__finder {
-        min-width: 92px;
-        height: 47px;
-        margin-left: 16px;
+        margin-top: -4px;
         text-decoration: underline;
     	@include media(large) {
             position: absolute;
-            top: 5px;
-            right: 355px;
+            top: 20px;
+            right: 384px;
             height: 41px;
+            font-family: $bold;
         }
     }
 
 	&__signin {
+        margin-top: -4px;
+        margin-right: $quarter-spacing-unit;
         background-color: $white;
 	  	border: none;
 	  	border-radius: 0;
-	  	height: 47px;
-	  	width: 80px;
-        min-width: 80px;
         padding: 0;
 	  	box-shadow: none;
 	  	color: #166D66;
@@ -152,7 +155,7 @@
 
 		  	@include media(large) {
                position: absolute;
-               top: 5px;
+               top: 20px;
                right: 10px;
 		  	   height: 41px;
 	  		   width: 85px;
@@ -161,6 +164,9 @@
                font-size: 16px;
                text-decoration: none;
 		  	}
+            @include media(xlarge) {
+               margin-right: 0;
+            }
 	}
 
     &__wrap {
@@ -224,7 +230,7 @@
         width: 100%;
         list-style: none;
         position: absolute;
-	  	top: 49px;
+	  	top: 50px;
 
 	  	@include media(large) {
             background: transparent;
@@ -256,7 +262,8 @@
     }
 
     &__item {
-        margin-left: 24px;
+
+        margin-left: $quarter-spacing-unit;
 
     	@include media(large) {
             display: inline-block; //Older browsers
@@ -385,7 +392,7 @@
         background-color: #3B70B1;
 
            @media (max-width: 960px) {
-                margin-left: -24px;
+                margin-left: -$quarter-spacing-unit;
             }
 
     	   &.toggle-show {
@@ -528,8 +535,8 @@
 
         @include media(large) {
             position: absolute;
-            top: -68px;
-            right: 100px;
+            top: -57px;
+            right: 117px;
             width: 232px;
             height: 41px;
             min-width: 232px;
