@@ -1,4 +1,4 @@
-<!-- Top item -->
+{{!-- <!-- Top item -->
 <li class="coop-nav__item coop-nav__wrap"><span class="coop-nav__link-wrap"><a href="#" class="coop-nav__link coop-nav__levelone" role="menuitem" aria-haspopup="true">Get legal help
 
 	<svg width="16" height="16" class="chevron" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l7 7 7-7" stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
@@ -83,3 +83,58 @@
 		</li>
 	</ul>
 </li>
+ --}}
+
+<li class="coop-nav__item coop-nav__wrap">
+    <span class="coop-nav__link-wrap">
+    	<a href="#" class="coop-nav__link coop-nav__levelone" role="menuitem" aria-haspoopup="true">
+    		{{top-link-text}}
+			<svg width="16" height="16" class="chevron" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l7 7 7-7" stroke="#282828" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+			<svg width="17" height="10"class="open-chevron" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 8.5l-7-7-7 7" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+		</a>
+	</span>
+    <ul class="coop-nav__leveltwo">
+    {{#each nav-items}}
+
+	    {{#if nav-item-same-col}}
+	    <div class="coop-nav__item same-column">
+	        {{#each nav-item-same-col.nav-items}}
+	        <li class="coop-nav__item">
+	            {{#if nav-item.nav-items}}
+				<a href="#" class="coop-nav__link levelthree-trigger" role="menuitem">{{nav-item.text}}</a>
+	            <ul class="coop-nav__levelthree">
+	                {{#each nav-item.nav-items}}
+	                <li class="coop-nav__item">
+	                    <a class="coop-nav__link" href="{{nav-item.url}}{{#if nav-item.utm}}?{{nav-item.utm}}{{/if}}">{{nav-item.text}}</a>
+	                </li>
+	                {{/each}}
+	            </ul>
+	            {{/if}}
+	            {{#unless nav-item.nav-items}}
+				<a href="#" class="coop-nav__link levelthree-trigger" role="menuitem">{{nav-item.text}}</a>
+	            {{/unless}}
+	        </li>
+	        {{/each}}
+	    </div>
+	    {{/if}}
+
+	    {{#unless nav-item-same-col}}
+	    <li class="coop-nav__item">
+	        {{#if nav-item.nav-items}}
+			<a href="#" class="coop-nav__link levelthree-trigger" role="menuitem">{{nav-item.text}}</a>
+	        <ul class="coop-nav__levelthree">
+	            {{#each nav-item.nav-items}}
+	            <li class="coop-nav__item">
+	                <a class="coop-nav__link" href="{{nav-item.url}}{{#if nav-item.utm}}?{{nav-item.utm}}{{/if}}">{{nav-item.text}}</a>
+	            </li>
+	            {{/each}}
+	        </ul>
+	        {{/if}}
+	    </li>
+	    {{/unless}}
+
+    {{/each}}
+    </ul>
+</li>
+<!-- Top item -->
+
