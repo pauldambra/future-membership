@@ -1,0 +1,94 @@
+status: wip
+context:
+  top-link-text: Get legal help
+  top-link-href: "#"
+  click-id: "cn_legal"
+  is-trigger: true
+  nav-items:
+    - nav-item-same-col:
+        nav-items:
+        - nav-item:
+            text: "Deal with a death or inheritance (probate)"
+            url: "#"
+            utm-tracking: ""
+            click-tracking: ""
+            nav-items:
+            - nav-item:
+                text: "Execute someone’s will"
+                url: "#"
+                utm-tracking: "#"
+            - nav-item:
+                text: "Deal with an estate when there’s  no will"
+                url: "#"
+                utm-tracking: "#"
+            - nav-item:
+                text: "Read articles about inheritance"
+                url: ""
+                utm-tracking: ""
+        - nav-item:
+            text: "Make a will"
+            url: ""
+            utm-tracking: ""
+            nav-items:
+            - nav-item:
+                text: "Start your will online"
+                url: ""
+                utm-tracking: ""
+            - nav-item:
+                text: "Give someone power of attorney"
+                url: ""
+                utm-tracking: ""
+            - nav-item:
+                text: "Read articles about wills"
+                url: ""
+                utm-tracking: ""
+    - nav-item:
+        text: "Separate or divorce"
+        url: ""
+        utm-tracking: ""
+        nav-items:
+        - nav-item:
+            text: "Start a divorce online"
+            url: ""
+            utm-tracking: ""
+        - nav-item:
+            text: "Protect your finances and property after divorce"
+            url: ""
+            utm-tracking: ""
+        - nav-item:
+            text: "Change your will"
+            url: "s"
+            utm-tracking: ""
+        - nav-item:
+            text: "Split shared finances and property (unmarried)"
+            url: ""
+            utm-tracking: ""
+        - nav-item:
+            text: "Arrange child custody or visiting rights)"
+            url: ""
+            utm-tracking: ""
+    - nav-item:
+        text: "Move in together"
+        url: ""
+        utm-tracking: ""
+        nav-items:
+        - nav-item:
+            text: "Make a pre- or post-nuptial agreement"
+            url: ""
+            utm-tracking: ""
+        - nav-item:
+            text: "Protect your finances and property after divorce"
+            url: ""
+            utm-tracking: ""
+        - nav-item:
+            text: "Claim for an accident or injury"
+            url: ""
+            utm-tracking: ""
+        - nav-item:
+            text: "Raise a work dispute"
+            url: ""
+            utm-tracking: ""
+        - nav-item:
+            text: "Arrange child custody or visiting rights)"
+            url: ""
+            utm-tracking: ""
