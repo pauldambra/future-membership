@@ -1,6 +1,6 @@
 {
   "name": "future-membership",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "scripts": {
     "fractal-build": "fractal build"
   },
@@ -12,7 +12,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "1.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^2.2.0",
+    "gulp-sass": "^4.0.2",
     "gulp-uglify": "^2.0.0",
     "gulpicon": "^1.0.0"
   }
